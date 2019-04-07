@@ -1,1 +1,3 @@
-# algo_practice
+Foundations of Algorithms
+by
+Richard Neapolitan
