@@ -104,6 +104,51 @@ P[][] by the exercise's indexing =
     0,     0,     0,     3,     4, 
     0,     0,     0,     0,     4, 
     0,     0,     0,     0,     0, 
+*****  
+Asking: A1, A2, A3, A4, A5, 
+multiple items,  +(
+*****  (
+P[1][5] = 4
+Divide into: A1 ~ A4 || A5 ~ A5
+Asking: A1, A2, A3, A4, 
+multiple items,  +(
+*****  ((
+P[1][4] = 1
+Divide into: A1 ~ A1 || A2 ~ A4
+Asking: A1, 
+a single item,  +A1
+*****  ((A1
+Asking: A2, A3, A4, 
+multiple items,  +(
+*****  ((A1(
+P[2][4] = 2
+Divide into: A2 ~ A2 || A3 ~ A4
+Asking: A2, 
+a single item,  +A2
+*****  ((A1(A2
+Asking: A3, A4, 
+multiple items,  +(
+*****  ((A1(A2(
+P[3][4] = 3
+Divide into: A3 ~ A3 || A4 ~ A4
+Asking: A3, 
+a single item,  +A3
+*****  ((A1(A2(A3
+Asking: A4, 
+a single item,  +A4
+*****  ((A1(A2(A3A4
+completing A3 ~ A4,  +)
+*****  ((A1(A2(A3A4)
+completing A2 ~ A4,  +)
+*****  ((A1(A2(A3A4))
+completing A1 ~ A4,  +)
+*****  ((A1(A2(A3A4)))
+Asking: A5, 
+a single item,  +A5
+*****  ((A1(A2(A3A4)))A5
+completing A1 ~ A5,  +)
+*****  ((A1(A2(A3A4)))A5)
+
 multiplication order by the exercise's indexing =
 ((A1(A2(A3A4)))A5)
 FINISH!!!
