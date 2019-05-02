@@ -1,3 +1,4 @@
+import java.lang.*;
 public class Main {
 /*  static - 
         If you use static keyword in a method then it becomes static method.
@@ -12,6 +13,31 @@ public class Main {
             System.out.printf("%5d, ", M[i][j]);
             }
         System.out.println();
+        }
+    }
+    public static void orderCheck(int[][] myP, int i, int j, StringBuilder matrixOrderString) {
+
+        System.out.printf("Asking: ");
+        for (int temp = i; temp <= j; temp++){
+            System.out.printf("A%d, ", temp+1);
+        } System.out.printf("\n");
+
+        if (i == j) {
+            System.out.printf("a single item,  +A%d\n", i+1); // +1 is to fit the indexing of the exercise
+            matrixOrderString.append("A"); matrixOrderString.append(i+1);
+            System.out.println(matrixOrderString);
+        }
+        else{
+            int k = myP[i][j];
+            System.out.println("multiple items,  +(");
+            matrixOrderString.append("("); System.out.println(matrixOrderString);
+            System.out.printf("P[%d][%d] = %d\n", i+1, j+1, k+1);
+            System.out.printf("Divide into: A%d ~ A%d || A%d ~ A%d\n",i+1, k+1, k+2, j+1);  // +1 or +2 to fit the indexing of the exercise
+            orderCheck(myP, i, k, matrixOrderString);
+            orderCheck(myP, k+1, j, matrixOrderString);
+            System.out.printf("completing A%d ~ A%d,  +)\n", i+1, j+1);
+            matrixOrderString.append(")"); System.out.println(matrixOrderString);
+
         }
     }
     public static void order(int[][] myP, int i, int j) {
@@ -85,6 +111,11 @@ public class Main {
         }
         System.out.println("P[][] by the exercise's indexing =");
         showMatrix(P, n);
+
+        StringBuilder matrixOrderString = new StringBuilder("*****  ");
+        System.out.println(matrixOrderString);
+        orderCheck(myP, 0, n-1, matrixOrderString);
+        System.out.printf("\n");
 
         System.out.println("multiplication order by the exercise's indexing =");
         order(myP, 0, n-1);
