@@ -1,80 +1,77 @@
 public class Main {
-    /*
-    static - 
+/*  static - 
         If you use static keyword in a method then it becomes static method.
         Static methods can be called without creating an instance of a class.
 
         For example, the sqrt() method of standard Math class is static.
-        Hence, we can directly call Math.sqrt() without creating an instance of Math class.
-    */
-    public static int maxAndInex(int a) {
-        System.out.println("call");
-        return a;
+        Hence, we can directly call Math.sqrt() without creating an instance of Math class.                                            */
+    public static void showMatrix(int M[][], int n) {
+        for (int i = 0; i <= n-1; i++) {
+            for (int j = 0; j <= n-1; j++) {
+            System.out.printf("%5d, ", M[i][j]);
+            }
+        System.out.println();
+        }
     }
+    public static int minmult(int n, int[] d) {
 
-    public static int[][] minmult(int n, int[] d) {
-        maxAndInex(2); // test how to call a function
-        int[][] M = new int[n][n];
-
-        // Set the matrix.
-        for (int temp = 0; temp <= n-1; temp++) {
-            for (int temptemp = 0; temptemp <= n-1; temptemp++) {
-            M[temp][temptemp] = 0;
-            //M[i][i] = 0;
+        int[][] M = new int[n][n];  // Set the M matrix.
+        int[][] P = new int[n][n];  // Set the P matrix.
+        for (int i = 0; i <= n-1; i++) {
+            for (int j = 0; j <= n-1; j++) {
+            M[i][j] = 0;
+            P[i][j] = 0;
             }
         }
-        for (int diagonalIndex = 1; diagonalIndex <= n-1; diagonalIndex++) {  // n matrices need n-1 diagonals
+        System.out.println("M[][] =");
+        showMatrix(M, n);
+
+        for (int diagonalIndex = 1; diagonalIndex <= n-1; diagonalIndex++) {  // n matrices need n-1 diagonals to solve the instance
             // We index the longest/middle diagonal as 0^th
             // The first diagonal we want to deal is 1^th
-            // The minimum multiplication number is the (n-1)^th diagonal, which only has one number in it.
+            // The minimum-multiplication number is the (n-1)^th diagonal, which only has one number in it.
             // There are (n-diagonalIndex) items in diagonalIndex^th diagonal 
-            System.out.println(diagonalIndex);
-            System.out.println("diagonalIndex");
-            for (int i = 0; i <= n-diagonalIndex-1; i++){  // `i` go though all items in one diagonal
+            System.out.println("diagonalIndex = " + diagonalIndex); 
+            for (int i = 0; i <= n-diagonalIndex-1; i++){  // `i` go though all items in a single diagonal
             
-                int j = i + diagonalIndex; // A matrix element M[i][j] is at the (i-j)t^h diagonal.
-                int[] candidateArray = new int[2*n-1];  //
-                int[] kArray = new int[n-1];  // n-1 is the max of the number of candidates
-                
-                System.out.println("before k loop");
-                for (int k = i; k <= j-1; k++){
-                    System.out.println("head");
-                    System.out.println(i);
-                    System.out.println(k+1);
-                    System.out.println(j+1);  
-                    System.out.println("tail");
-                    candidateArray[k] = M[i][k] + M[k+1][j] + d[i]*d[k+1]*d[j+1];
-                    kArray[k-i] = k;  // We will find the winner by 
-                }
-                /*
-                int flag = 1;
-                while (flag == 1) {
-                    for (int kArrayIndex = 0; 
-                            kArrayIndex <= Math.floor((diagonalIndex-1)/2); 
-                            kArrayIndex++){
-                        // floor((diagonal-1)/2) equal to floor((diagonal+1)/2)-1 where (diagonal+1) equal to length of kArrayIndex 
-                        System.out.println(kArrayIndex);
-                        if (candidateArray[kArray[kArrayIndex*2]] < candidateArray[kArray[kArrayIndex*2+1]]) {
-                            kArray[kArrayIndex] = kArray[kArrayIndex*2];
-                        }
-                        else{
-                            kArray[kArrayIndex] = kArray[kArrayIndex*2+1];
-                        }
+                int j = i + diagonalIndex; // A matrix element M[i][j] is at the (i-j)^th diagonal.
+
+                int currentMin = Integer.MAX_VALUE;  // set a very large number
+                int currentk = -1;
+                int temp;
+
+                for (int k = i; k <= j-1; k++){  // Executing i-(j-1)+1=i-j=diagonalIndex times
+                    System.out.print("---  ");
+                    System.out.print(i);  System.out.print(",  "); 
+                    System.out.print(k+1);  System.out.print(",  ");
+                    System.out.print(j+1);
+                    System.out.print("  ---  ");
+                    
+                    temp = M[i][k] + M[k+1][j] + d[i]*d[k+1]*d[j+1];
+                    
+                    if (temp < currentMin){
+                        System.out.print("smaller!  "); System.out.print(temp); System.out.print(" < "); System.out.println(currentMin);
+                        currentMin = temp;
+                        currentk = k;
                     }
-                flag = 0;
+                    else{
+                        System.out.print("NOT smaller!  "); System.out.print(temp); System.out.print(" > "); System.out.println(currentMin);
+                    }
                 }
-                */
+                M[i][j] = currentMin;
+                P[i][j] = currentk;
+                System.out.print("Choose k = "); System.out.println(currentk);
+                System.out.println("M[][] =");
+                showMatrix(M, n);
             }
         }
-        
-        return M;
+        System.out.println("P[][] =");
+        showMatrix(P, n);
+        return M[0][n-1];
     }
-    
-    
     public static void main(String[] args) {
         int n = 5;  // 5 matrices
         int[] d = new int[n+1];  // 6 subfix
-
         d[0] = 10;
         d[1] = 4;
         d[2] = 5;
@@ -82,9 +79,8 @@ public class Main {
         d[4] = 2;
         d[5] = 50;
 
-        System.out.println("yoyo <3 PS");
-        int[][] M = minmult(n, d);
-
-        System.out.println("final");
+        int M = minmult(n, d);
+        System.out.println("FINISH!!!");
+        System.out.println("(*￣▽￣)/‧☆*\"\u0060\'*-.,_,.-*\'\u0060\"*-.,_☆");
     }
 }
