@@ -26,11 +26,11 @@ public class Main {
             double currentMin =  Double.MAX_VALUE;
             int currentk = 0;
             for (int k = i; k <= j; k++){
-                //System.out.print(i + "     ");
-                //System.out.print(j + "     ");
-                //System.out.println(k);
+                System.out.print(i + "     ");
+                System.out.print(j + "     ");
+                System.out.println(k);
                 if (A[i][k-1] + A[k+1][j] < currentMin){
-                    //System.out.println("<");
+                    System.out.println("<  <  <  <");
                     currentMin = A[i][k-1] + A[k+1][j];
                     currentk = k;
                 }
@@ -41,8 +41,8 @@ public class Main {
     }
     public static double sumPArrayOver(int i, int j, double[] pArray){
         double sum = 0;
-        //System.out.print(i + "     ");
-        //System.out.println(j + "=====");
+        System.out.print(i + "     ");
+        System.out.println(j + "===== sum over");
         for (int k = i; k <= j; k++){
             sum = sum + pArray[k];
         }
@@ -99,8 +99,8 @@ public class Main {
     public static void main(String[] args) {
         // The keys are the indeces of the two arrays below.
         //String[] wordArray = {"aaa","CASE", "ELSE", "END", "IF", "OF", "THEN"};
-        //double[] pArray = {-99.9, 0.05, 0.15, 0.05, 0.35, 0.05, 0.35};
-        double[] pArray = {-99.9, 3./8., 3./8., 1./8., 1./8.};
+        double[] pArray = {-99.9, 0.05, 0.15, 0.05, 0.35, 0.05, 0.35};
+        //double[] pArray = {-99.9, 3./8., 3./8., 1./8., 1./8.};
         buildOptimalBinarySearchTree(pArray);
         System.out.println("The end.");
     }
