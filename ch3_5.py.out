@@ -9,44 +9,45 @@ At the beginning, W is
 
 
 Skiping 0 . We are working on [1, 2, 3, 4, 5, 6]
-Woring on W[ 1 ][ 1 ];   4 +  3 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 2 ];  -1 +  3 vs -1;  choose W[ 1 ][ 2 ] =  -1
-Woring on W[ 1 ][ 3 ];  -1 +  3 vs 18;  choose W[ 1 ][ 3 ] =  18
-Woring on W[ 1 ][ 4 ];  -1 +  3 vs -1;  choose W[ 1 ][ 4 ] =  -1
-Woring on W[ 1 ][ 5 ];  10 +  3 vs -1;  choose W[ 1 ][ 5 ] =  10 +  3
-Woring on W[ 1 ][ 6 ];  -1 +  3 vs -1;  choose W[ 1 ][ 6 ] =  -1
-Woring on W[ 2 ][ 1 ];   4 + -1 vs  6;  choose W[ 2 ][ 1 ] =   6
-Woring on W[ 2 ][ 2 ];  -1 + -1 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 3 ];  -1 + -1 vs -1;  choose W[ 2 ][ 3 ] =  -1
-Woring on W[ 2 ][ 4 ];  -1 + -1 vs -1;  choose W[ 2 ][ 4 ] =  -1
-Woring on W[ 2 ][ 5 ];  10 + -1 vs -1;  choose W[ 2 ][ 5 ] =  -1
-Woring on W[ 2 ][ 6 ];  -1 + -1 vs -1;  choose W[ 2 ][ 6 ] =  -1
-Woring on W[ 3 ][ 1 ];   4 + -1 vs  5;  choose W[ 3 ][ 1 ] =   5
-Woring on W[ 3 ][ 2 ];  -1 + -1 vs 15;  choose W[ 3 ][ 2 ] =  15
-Woring on W[ 3 ][ 3 ];  -1 + -1 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 4 ];  -1 + -1 vs  2;  choose W[ 3 ][ 4 ] =   2
-Woring on W[ 3 ][ 5 ];  10 + -1 vs 19;  choose W[ 3 ][ 5 ] =  19
-Woring on W[ 3 ][ 6 ];  -1 + -1 vs  5;  choose W[ 3 ][ 6 ] =   5
-Woring on W[ 4 ][ 1 ];   4 + -1 vs -1;  choose W[ 4 ][ 1 ] =  -1
-Woring on W[ 4 ][ 2 ];  -1 + -1 vs 12;  choose W[ 4 ][ 2 ] =  12
-Woring on W[ 4 ][ 3 ];  -1 + -1 vs  1;  choose W[ 4 ][ 3 ] =   1
-Woring on W[ 4 ][ 4 ];  -1 + -1 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 5 ];  10 + -1 vs -1;  choose W[ 4 ][ 5 ] =  -1
-Woring on W[ 4 ][ 6 ];  -1 + -1 vs -1;  choose W[ 4 ][ 6 ] =  -1
-Woring on W[ 5 ][ 1 ];   4 + -1 vs -1;  choose W[ 5 ][ 1 ] =  -1
-Woring on W[ 5 ][ 2 ];  -1 + -1 vs -1;  choose W[ 5 ][ 2 ] =  -1
-Woring on W[ 5 ][ 3 ];  -1 + -1 vs -1;  choose W[ 5 ][ 3 ] =  -1
-Woring on W[ 5 ][ 4 ];  -1 + -1 vs -1;  choose W[ 5 ][ 4 ] =  -1
-Woring on W[ 5 ][ 5 ];  10 + -1 vs  0;  choose W[ 5 ][ 5 ] =   0
-Woring on W[ 5 ][ 6 ];  -1 + -1 vs 10;  choose W[ 5 ][ 6 ] =  10
-Woring on W[ 6 ][ 1 ];   4 + -1 vs -1;  choose W[ 6 ][ 1 ] =  -1
-Woring on W[ 6 ][ 2 ];  -1 + -1 vs -1;  choose W[ 6 ][ 2 ] =  -1
-Woring on W[ 6 ][ 3 ];  -1 + -1 vs  8;  choose W[ 6 ][ 3 ] =   8
-Woring on W[ 6 ][ 4 ];  -1 + -1 vs -1;  choose W[ 6 ][ 4 ] =  -1
-Woring on W[ 6 ][ 5 ];  10 + -1 vs -1;  choose W[ 6 ][ 5 ] =  -1
-Woring on W[ 6 ][ 6 ];  -1 + -1 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 1 ][ 1 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 1 ];   0 vs  4 +  3;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 2 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 2 ];  -1 vs -1 +  3;  choose W[ 1 ][ 2 ] =  -1
+W[ 1 ][ 3 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 3 ];  18 vs -1 +  3;  choose W[ 1 ][ 3 ] =  18
+W[ 1 ][ 4 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 4 ];  -1 vs -1 +  3;  choose W[ 1 ][ 4 ] =  -1
+W[ 1 ][ 5 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 5 ];  -1 vs 10 +  3;  choose W[ 1 ][ 5 ] =  10 +  3
+P[ 1 ][ 5 ] =          0
+W[ 1 ][ 6 ] vs W[ 1 ][ 0 ] + W[ 0 ][ 6 ];  -1 vs -1 +  3;  choose W[ 1 ][ 6 ] =  -1
+W[ 2 ][ 1 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 1 ];   6 vs  4 + -1;  choose W[ 2 ][ 1 ] =   6
+W[ 2 ][ 2 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 2 ];   0 vs -1 + -1;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 3 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 3 ];  -1 vs -1 + -1;  choose W[ 2 ][ 3 ] =  -1
+W[ 2 ][ 4 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 4 ];  -1 vs -1 + -1;  choose W[ 2 ][ 4 ] =  -1
+W[ 2 ][ 5 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 5 ];  -1 vs 10 + -1;  choose W[ 2 ][ 5 ] =  -1
+W[ 2 ][ 6 ] vs W[ 2 ][ 0 ] + W[ 0 ][ 6 ];  -1 vs -1 + -1;  choose W[ 2 ][ 6 ] =  -1
+W[ 3 ][ 1 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 1 ];   5 vs  4 + -1;  choose W[ 3 ][ 1 ] =   5
+W[ 3 ][ 2 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 2 ];  15 vs -1 + -1;  choose W[ 3 ][ 2 ] =  15
+W[ 3 ][ 3 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 3 ];   0 vs -1 + -1;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 4 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 4 ];   2 vs -1 + -1;  choose W[ 3 ][ 4 ] =   2
+W[ 3 ][ 5 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 5 ];  19 vs 10 + -1;  choose W[ 3 ][ 5 ] =  19
+W[ 3 ][ 6 ] vs W[ 3 ][ 0 ] + W[ 0 ][ 6 ];   5 vs -1 + -1;  choose W[ 3 ][ 6 ] =   5
+W[ 4 ][ 1 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 1 ];  -1 vs  4 + -1;  choose W[ 4 ][ 1 ] =  -1
+W[ 4 ][ 2 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 2 ];  12 vs -1 + -1;  choose W[ 4 ][ 2 ] =  12
+W[ 4 ][ 3 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 3 ];   1 vs -1 + -1;  choose W[ 4 ][ 3 ] =   1
+W[ 4 ][ 4 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 4 ];   0 vs -1 + -1;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 5 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 5 ];  -1 vs 10 + -1;  choose W[ 4 ][ 5 ] =  -1
+W[ 4 ][ 6 ] vs W[ 4 ][ 0 ] + W[ 0 ][ 6 ];  -1 vs -1 + -1;  choose W[ 4 ][ 6 ] =  -1
+W[ 5 ][ 1 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 1 ];  -1 vs  4 + -1;  choose W[ 5 ][ 1 ] =  -1
+W[ 5 ][ 2 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 2 ];  -1 vs -1 + -1;  choose W[ 5 ][ 2 ] =  -1
+W[ 5 ][ 3 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 3 ];  -1 vs -1 + -1;  choose W[ 5 ][ 3 ] =  -1
+W[ 5 ][ 4 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 4 ];  -1 vs -1 + -1;  choose W[ 5 ][ 4 ] =  -1
+W[ 5 ][ 5 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 5 ];   0 vs 10 + -1;  choose W[ 5 ][ 5 ] =   0
+W[ 5 ][ 6 ] vs W[ 5 ][ 0 ] + W[ 0 ][ 6 ];  10 vs -1 + -1;  choose W[ 5 ][ 6 ] =  10
+W[ 6 ][ 1 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 1 ];  -1 vs  4 + -1;  choose W[ 6 ][ 1 ] =  -1
+W[ 6 ][ 2 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 2 ];  -1 vs -1 + -1;  choose W[ 6 ][ 2 ] =  -1
+W[ 6 ][ 3 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 3 ];   8 vs -1 + -1;  choose W[ 6 ][ 3 ] =   8
+W[ 6 ][ 4 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 4 ];  -1 vs -1 + -1;  choose W[ 6 ][ 4 ] =  -1
+W[ 6 ][ 5 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 5 ];  -1 vs 10 + -1;  choose W[ 6 ][ 5 ] =  -1
+W[ 6 ][ 6 ] vs W[ 6 ][ 0 ] + W[ 0 ][ 6 ];   0 vs -1 + -1;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, -1, -1, -1, 10, -1]
 [3, 0, -1, 18, -1, 20, -1]
 [-1, 6, 0, -1, -1, -1, -1]
@@ -55,46 +56,59 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [-1, -1, -1, 8, -1, -1, 0]
 
+The P matrix is
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, 0, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
 
 Skiping 1 . We are working on [0, 2, 3, 4, 5, 6]
-Woring on W[ 0 ][ 0 ];   3 +  4 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 2 ];  -1 +  4 vs -1;  choose W[ 0 ][ 2 ] =  -1
-Woring on W[ 0 ][ 3 ];  18 +  4 vs -1;  choose W[ 0 ][ 3 ] =  18 +  4
-Woring on W[ 0 ][ 4 ];  -1 +  4 vs -1;  choose W[ 0 ][ 4 ] =  -1
-Woring on W[ 0 ][ 5 ];  20 +  4 vs 10;  choose W[ 0 ][ 5 ] =  10
-Woring on W[ 0 ][ 6 ];  -1 +  4 vs -1;  choose W[ 0 ][ 6 ] =  -1
-Woring on W[ 2 ][ 0 ];   3 +  6 vs -1;  choose W[ 2 ][ 0 ] =   3 +  6
-Woring on W[ 2 ][ 2 ];  -1 +  6 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 3 ];  18 +  6 vs -1;  choose W[ 2 ][ 3 ] =  18 +  6
-Woring on W[ 2 ][ 4 ];  -1 +  6 vs -1;  choose W[ 2 ][ 4 ] =  -1
-Woring on W[ 2 ][ 5 ];  20 +  6 vs -1;  choose W[ 2 ][ 5 ] =  20 +  6
-Woring on W[ 2 ][ 6 ];  -1 +  6 vs -1;  choose W[ 2 ][ 6 ] =  -1
-Woring on W[ 3 ][ 0 ];   3 +  5 vs -1;  choose W[ 3 ][ 0 ] =   3 +  5
-Woring on W[ 3 ][ 2 ];  -1 +  5 vs 15;  choose W[ 3 ][ 2 ] =  15
-Woring on W[ 3 ][ 3 ];  18 +  5 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 4 ];  -1 +  5 vs  2;  choose W[ 3 ][ 4 ] =   2
-Woring on W[ 3 ][ 5 ];  20 +  5 vs 19;  choose W[ 3 ][ 5 ] =  19
-Woring on W[ 3 ][ 6 ];  -1 +  5 vs  5;  choose W[ 3 ][ 6 ] =   5
-Woring on W[ 4 ][ 0 ];   3 + -1 vs -1;  choose W[ 4 ][ 0 ] =  -1
-Woring on W[ 4 ][ 2 ];  -1 + -1 vs 12;  choose W[ 4 ][ 2 ] =  12
-Woring on W[ 4 ][ 3 ];  18 + -1 vs  1;  choose W[ 4 ][ 3 ] =   1
-Woring on W[ 4 ][ 4 ];  -1 + -1 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 5 ];  20 + -1 vs -1;  choose W[ 4 ][ 5 ] =  -1
-Woring on W[ 4 ][ 6 ];  -1 + -1 vs -1;  choose W[ 4 ][ 6 ] =  -1
-Woring on W[ 5 ][ 0 ];   3 + -1 vs -1;  choose W[ 5 ][ 0 ] =  -1
-Woring on W[ 5 ][ 2 ];  -1 + -1 vs -1;  choose W[ 5 ][ 2 ] =  -1
-Woring on W[ 5 ][ 3 ];  18 + -1 vs -1;  choose W[ 5 ][ 3 ] =  -1
-Woring on W[ 5 ][ 4 ];  -1 + -1 vs -1;  choose W[ 5 ][ 4 ] =  -1
-Woring on W[ 5 ][ 5 ];  20 + -1 vs  0;  choose W[ 5 ][ 5 ] =   0
-Woring on W[ 5 ][ 6 ];  -1 + -1 vs 10;  choose W[ 5 ][ 6 ] =  10
-Woring on W[ 6 ][ 0 ];   3 + -1 vs -1;  choose W[ 6 ][ 0 ] =  -1
-Woring on W[ 6 ][ 2 ];  -1 + -1 vs -1;  choose W[ 6 ][ 2 ] =  -1
-Woring on W[ 6 ][ 3 ];  18 + -1 vs  8;  choose W[ 6 ][ 3 ] =   8
-Woring on W[ 6 ][ 4 ];  -1 + -1 vs -1;  choose W[ 6 ][ 4 ] =  -1
-Woring on W[ 6 ][ 5 ];  20 + -1 vs -1;  choose W[ 6 ][ 5 ] =  -1
-Woring on W[ 6 ][ 6 ];  -1 + -1 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 0 ];   0 vs  3 +  4;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 2 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 2 ];  -1 vs -1 +  4;  choose W[ 0 ][ 2 ] =  -1
+W[ 0 ][ 3 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 3 ];  -1 vs 18 +  4;  choose W[ 0 ][ 3 ] =  18 +  4
+P[ 0 ][ 3 ] =          1
+W[ 0 ][ 4 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 4 ];  -1 vs -1 +  4;  choose W[ 0 ][ 4 ] =  -1
+W[ 0 ][ 5 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 5 ];  10 vs 20 +  4;  choose W[ 0 ][ 5 ] =  10
+W[ 0 ][ 6 ] vs W[ 0 ][ 1 ] + W[ 1 ][ 6 ];  -1 vs -1 +  4;  choose W[ 0 ][ 6 ] =  -1
+W[ 2 ][ 0 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 0 ];  -1 vs  3 +  6;  choose W[ 2 ][ 0 ] =   3 +  6
+P[ 2 ][ 0 ] =          1
+W[ 2 ][ 2 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 2 ];   0 vs -1 +  6;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 3 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 3 ];  -1 vs 18 +  6;  choose W[ 2 ][ 3 ] =  18 +  6
+P[ 2 ][ 3 ] =          1
+W[ 2 ][ 4 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 4 ];  -1 vs -1 +  6;  choose W[ 2 ][ 4 ] =  -1
+W[ 2 ][ 5 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 5 ];  -1 vs 20 +  6;  choose W[ 2 ][ 5 ] =  20 +  6
+P[ 2 ][ 5 ] =          1
+W[ 2 ][ 6 ] vs W[ 2 ][ 1 ] + W[ 1 ][ 6 ];  -1 vs -1 +  6;  choose W[ 2 ][ 6 ] =  -1
+W[ 3 ][ 0 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 0 ];  -1 vs  3 +  5;  choose W[ 3 ][ 0 ] =   3 +  5
+P[ 3 ][ 0 ] =          1
+W[ 3 ][ 2 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 2 ];  15 vs -1 +  5;  choose W[ 3 ][ 2 ] =  15
+W[ 3 ][ 3 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 3 ];   0 vs 18 +  5;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 4 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 4 ];   2 vs -1 +  5;  choose W[ 3 ][ 4 ] =   2
+W[ 3 ][ 5 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 5 ];  19 vs 20 +  5;  choose W[ 3 ][ 5 ] =  19
+W[ 3 ][ 6 ] vs W[ 3 ][ 1 ] + W[ 1 ][ 6 ];   5 vs -1 +  5;  choose W[ 3 ][ 6 ] =   5
+W[ 4 ][ 0 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 0 ];  -1 vs  3 + -1;  choose W[ 4 ][ 0 ] =  -1
+W[ 4 ][ 2 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 2 ];  12 vs -1 + -1;  choose W[ 4 ][ 2 ] =  12
+W[ 4 ][ 3 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 3 ];   1 vs 18 + -1;  choose W[ 4 ][ 3 ] =   1
+W[ 4 ][ 4 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 4 ];   0 vs -1 + -1;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 5 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 5 ];  -1 vs 20 + -1;  choose W[ 4 ][ 5 ] =  -1
+W[ 4 ][ 6 ] vs W[ 4 ][ 1 ] + W[ 1 ][ 6 ];  -1 vs -1 + -1;  choose W[ 4 ][ 6 ] =  -1
+W[ 5 ][ 0 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 0 ];  -1 vs  3 + -1;  choose W[ 5 ][ 0 ] =  -1
+W[ 5 ][ 2 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 2 ];  -1 vs -1 + -1;  choose W[ 5 ][ 2 ] =  -1
+W[ 5 ][ 3 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 3 ];  -1 vs 18 + -1;  choose W[ 5 ][ 3 ] =  -1
+W[ 5 ][ 4 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 4 ];  -1 vs -1 + -1;  choose W[ 5 ][ 4 ] =  -1
+W[ 5 ][ 5 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 5 ];   0 vs 20 + -1;  choose W[ 5 ][ 5 ] =   0
+W[ 5 ][ 6 ] vs W[ 5 ][ 1 ] + W[ 1 ][ 6 ];  10 vs -1 + -1;  choose W[ 5 ][ 6 ] =  10
+W[ 6 ][ 0 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 0 ];  -1 vs  3 + -1;  choose W[ 6 ][ 0 ] =  -1
+W[ 6 ][ 2 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 2 ];  -1 vs -1 + -1;  choose W[ 6 ][ 2 ] =  -1
+W[ 6 ][ 3 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 3 ];   8 vs 18 + -1;  choose W[ 6 ][ 3 ] =   8
+W[ 6 ][ 4 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 4 ];  -1 vs -1 + -1;  choose W[ 6 ][ 4 ] =  -1
+W[ 6 ][ 5 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 5 ];  -1 vs 20 + -1;  choose W[ 6 ][ 5 ] =  -1
+W[ 6 ][ 6 ] vs W[ 6 ][ 1 ] + W[ 1 ][ 6 ];   0 vs -1 + -1;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, -1, 36, -1, 10, -1]
 [3, 0, -1, 18, -1, 20, -1]
 [6, 6, 0, 36, -1, 40, -1]
@@ -103,46 +117,57 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [-1, -1, -1, 8, -1, -1, 0]
 
+The P matrix is
+[-1, -1, -1, 1, -1, -1, -1]
+[-1, -1, -1, -1, -1, 0, -1]
+[1, -1, -1, 1, -1, 1, -1]
+[1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
 
 Skiping 2 . We are working on [0, 1, 3, 4, 5, 6]
-Woring on W[ 0 ][ 0 ];   6 + -1 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 1 ];   6 + -1 vs  4;  choose W[ 0 ][ 1 ] =   4
-Woring on W[ 0 ][ 3 ];  36 + -1 vs 36;  choose W[ 0 ][ 3 ] =  36
-Woring on W[ 0 ][ 4 ];  -1 + -1 vs -1;  choose W[ 0 ][ 4 ] =  -1
-Woring on W[ 0 ][ 5 ];  40 + -1 vs 10;  choose W[ 0 ][ 5 ] =  10
-Woring on W[ 0 ][ 6 ];  -1 + -1 vs -1;  choose W[ 0 ][ 6 ] =  -1
-Woring on W[ 1 ][ 0 ];   6 + -1 vs  3;  choose W[ 1 ][ 0 ] =   3
-Woring on W[ 1 ][ 1 ];   6 + -1 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 3 ];  36 + -1 vs 18;  choose W[ 1 ][ 3 ] =  18
-Woring on W[ 1 ][ 4 ];  -1 + -1 vs -1;  choose W[ 1 ][ 4 ] =  -1
-Woring on W[ 1 ][ 5 ];  40 + -1 vs 20;  choose W[ 1 ][ 5 ] =  20
-Woring on W[ 1 ][ 6 ];  -1 + -1 vs -1;  choose W[ 1 ][ 6 ] =  -1
-Woring on W[ 3 ][ 0 ];   6 + 15 vs  6;  choose W[ 3 ][ 0 ] =   6
-Woring on W[ 3 ][ 1 ];   6 + 15 vs  5;  choose W[ 3 ][ 1 ] =   5
-Woring on W[ 3 ][ 3 ];  36 + 15 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 4 ];  -1 + 15 vs  2;  choose W[ 3 ][ 4 ] =   2
-Woring on W[ 3 ][ 5 ];  40 + 15 vs 19;  choose W[ 3 ][ 5 ] =  19
-Woring on W[ 3 ][ 6 ];  -1 + 15 vs  5;  choose W[ 3 ][ 6 ] =   5
-Woring on W[ 4 ][ 0 ];   6 + 12 vs -1;  choose W[ 4 ][ 0 ] =   6 + 12
-Woring on W[ 4 ][ 1 ];   6 + 12 vs -1;  choose W[ 4 ][ 1 ] =   6 + 12
-Woring on W[ 4 ][ 3 ];  36 + 12 vs  1;  choose W[ 4 ][ 3 ] =   1
-Woring on W[ 4 ][ 4 ];  -1 + 12 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 5 ];  40 + 12 vs -1;  choose W[ 4 ][ 5 ] =  40 + 12
-Woring on W[ 4 ][ 6 ];  -1 + 12 vs -1;  choose W[ 4 ][ 6 ] =  -1
-Woring on W[ 5 ][ 0 ];   6 + -1 vs -1;  choose W[ 5 ][ 0 ] =  -1
-Woring on W[ 5 ][ 1 ];   6 + -1 vs -1;  choose W[ 5 ][ 1 ] =  -1
-Woring on W[ 5 ][ 3 ];  36 + -1 vs -1;  choose W[ 5 ][ 3 ] =  -1
-Woring on W[ 5 ][ 4 ];  -1 + -1 vs -1;  choose W[ 5 ][ 4 ] =  -1
-Woring on W[ 5 ][ 5 ];  40 + -1 vs  0;  choose W[ 5 ][ 5 ] =   0
-Woring on W[ 5 ][ 6 ];  -1 + -1 vs 10;  choose W[ 5 ][ 6 ] =  10
-Woring on W[ 6 ][ 0 ];   6 + -1 vs -1;  choose W[ 6 ][ 0 ] =  -1
-Woring on W[ 6 ][ 1 ];   6 + -1 vs -1;  choose W[ 6 ][ 1 ] =  -1
-Woring on W[ 6 ][ 3 ];  36 + -1 vs  8;  choose W[ 6 ][ 3 ] =   8
-Woring on W[ 6 ][ 4 ];  -1 + -1 vs -1;  choose W[ 6 ][ 4 ] =  -1
-Woring on W[ 6 ][ 5 ];  40 + -1 vs -1;  choose W[ 6 ][ 5 ] =  -1
-Woring on W[ 6 ][ 6 ];  -1 + -1 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 0 ];   0 vs  6 + -1;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 1 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 1 ];   4 vs  6 + -1;  choose W[ 0 ][ 1 ] =   4
+W[ 0 ][ 3 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 3 ];  36 vs 36 + -1;  choose W[ 0 ][ 3 ] =  36
+W[ 0 ][ 4 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 4 ];  -1 vs -1 + -1;  choose W[ 0 ][ 4 ] =  -1
+W[ 0 ][ 5 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 5 ];  10 vs 40 + -1;  choose W[ 0 ][ 5 ] =  10
+W[ 0 ][ 6 ] vs W[ 0 ][ 2 ] + W[ 2 ][ 6 ];  -1 vs -1 + -1;  choose W[ 0 ][ 6 ] =  -1
+W[ 1 ][ 0 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 0 ];   3 vs  6 + -1;  choose W[ 1 ][ 0 ] =   3
+W[ 1 ][ 1 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 1 ];   0 vs  6 + -1;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 3 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 3 ];  18 vs 36 + -1;  choose W[ 1 ][ 3 ] =  18
+W[ 1 ][ 4 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 4 ];  -1 vs -1 + -1;  choose W[ 1 ][ 4 ] =  -1
+W[ 1 ][ 5 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 5 ];  20 vs 40 + -1;  choose W[ 1 ][ 5 ] =  20
+W[ 1 ][ 6 ] vs W[ 1 ][ 2 ] + W[ 2 ][ 6 ];  -1 vs -1 + -1;  choose W[ 1 ][ 6 ] =  -1
+W[ 3 ][ 0 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 0 ];   6 vs  6 + 15;  choose W[ 3 ][ 0 ] =   6
+W[ 3 ][ 1 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 1 ];   5 vs  6 + 15;  choose W[ 3 ][ 1 ] =   5
+W[ 3 ][ 3 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 3 ];   0 vs 36 + 15;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 4 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 4 ];   2 vs -1 + 15;  choose W[ 3 ][ 4 ] =   2
+W[ 3 ][ 5 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 5 ];  19 vs 40 + 15;  choose W[ 3 ][ 5 ] =  19
+W[ 3 ][ 6 ] vs W[ 3 ][ 2 ] + W[ 2 ][ 6 ];   5 vs -1 + 15;  choose W[ 3 ][ 6 ] =   5
+W[ 4 ][ 0 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 0 ];  -1 vs  6 + 12;  choose W[ 4 ][ 0 ] =   6 + 12
+P[ 4 ][ 0 ] =          2
+W[ 4 ][ 1 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 1 ];  -1 vs  6 + 12;  choose W[ 4 ][ 1 ] =   6 + 12
+P[ 4 ][ 1 ] =          2
+W[ 4 ][ 3 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 3 ];   1 vs 36 + 12;  choose W[ 4 ][ 3 ] =   1
+W[ 4 ][ 4 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 4 ];   0 vs -1 + 12;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 5 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 5 ];  -1 vs 40 + 12;  choose W[ 4 ][ 5 ] =  40 + 12
+P[ 4 ][ 5 ] =          2
+W[ 4 ][ 6 ] vs W[ 4 ][ 2 ] + W[ 2 ][ 6 ];  -1 vs -1 + 12;  choose W[ 4 ][ 6 ] =  -1
+W[ 5 ][ 0 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 0 ];  -1 vs  6 + -1;  choose W[ 5 ][ 0 ] =  -1
+W[ 5 ][ 1 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 1 ];  -1 vs  6 + -1;  choose W[ 5 ][ 1 ] =  -1
+W[ 5 ][ 3 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 3 ];  -1 vs 36 + -1;  choose W[ 5 ][ 3 ] =  -1
+W[ 5 ][ 4 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 4 ];  -1 vs -1 + -1;  choose W[ 5 ][ 4 ] =  -1
+W[ 5 ][ 5 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 5 ];   0 vs 40 + -1;  choose W[ 5 ][ 5 ] =   0
+W[ 5 ][ 6 ] vs W[ 5 ][ 2 ] + W[ 2 ][ 6 ];  10 vs -1 + -1;  choose W[ 5 ][ 6 ] =  10
+W[ 6 ][ 0 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 0 ];  -1 vs  6 + -1;  choose W[ 6 ][ 0 ] =  -1
+W[ 6 ][ 1 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 1 ];  -1 vs  6 + -1;  choose W[ 6 ][ 1 ] =  -1
+W[ 6 ][ 3 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 3 ];   8 vs 36 + -1;  choose W[ 6 ][ 3 ] =   8
+W[ 6 ][ 4 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 4 ];  -1 vs -1 + -1;  choose W[ 6 ][ 4 ] =  -1
+W[ 6 ][ 5 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 5 ];  -1 vs 40 + -1;  choose W[ 6 ][ 5 ] =  -1
+W[ 6 ][ 6 ] vs W[ 6 ][ 2 ] + W[ 2 ][ 6 ];   0 vs -1 + -1;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, -1, 36, -1, 10, -1]
 [3, 0, -1, 18, -1, 20, -1]
 [6, 6, 0, 36, -1, 40, -1]
@@ -151,46 +176,71 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [-1, -1, -1, 8, -1, -1, 0]
 
+The P matrix is
+[-1, -1, -1, 1, -1, -1, -1]
+[-1, -1, -1, -1, -1, 0, -1]
+[1, -1, -1, 1, -1, 1, -1]
+[1, -1, -1, -1, -1, -1, -1]
+[2, 2, -1, -1, -1, 2, -1]
+[-1, -1, -1, -1, -1, -1, -1]
+[-1, -1, -1, -1, -1, -1, -1]
 
 Skiping 3 . We are working on [0, 1, 2, 4, 5, 6]
-Woring on W[ 0 ][ 0 ];   6 + 36 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 1 ];   5 + 36 vs  4;  choose W[ 0 ][ 1 ] =   4
-Woring on W[ 0 ][ 2 ];  15 + 36 vs -1;  choose W[ 0 ][ 2 ] =  15 + 36
-Woring on W[ 0 ][ 4 ];   2 + 36 vs -1;  choose W[ 0 ][ 4 ] =   2 + 36
-Woring on W[ 0 ][ 5 ];  19 + 36 vs 10;  choose W[ 0 ][ 5 ] =  10
-Woring on W[ 0 ][ 6 ];   5 + 36 vs -1;  choose W[ 0 ][ 6 ] =   5 + 36
-Woring on W[ 1 ][ 0 ];   6 + 18 vs  3;  choose W[ 1 ][ 0 ] =   3
-Woring on W[ 1 ][ 1 ];   5 + 18 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 2 ];  15 + 18 vs -1;  choose W[ 1 ][ 2 ] =  15 + 18
-Woring on W[ 1 ][ 4 ];   2 + 18 vs -1;  choose W[ 1 ][ 4 ] =   2 + 18
-Woring on W[ 1 ][ 5 ];  19 + 18 vs 20;  choose W[ 1 ][ 5 ] =  20
-Woring on W[ 1 ][ 6 ];   5 + 18 vs -1;  choose W[ 1 ][ 6 ] =   5 + 18
-Woring on W[ 2 ][ 0 ];   6 + 36 vs  6;  choose W[ 2 ][ 0 ] =   6
-Woring on W[ 2 ][ 1 ];   5 + 36 vs  6;  choose W[ 2 ][ 1 ] =   6
-Woring on W[ 2 ][ 2 ];  15 + 36 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 4 ];   2 + 36 vs -1;  choose W[ 2 ][ 4 ] =   2 + 36
-Woring on W[ 2 ][ 5 ];  19 + 36 vs 40;  choose W[ 2 ][ 5 ] =  40
-Woring on W[ 2 ][ 6 ];   5 + 36 vs -1;  choose W[ 2 ][ 6 ] =   5 + 36
-Woring on W[ 4 ][ 0 ];   6 +  1 vs 12;  choose W[ 4 ][ 0 ] =   6 +  1
-Woring on W[ 4 ][ 1 ];   5 +  1 vs 12;  choose W[ 4 ][ 1 ] =   5 +  1
-Woring on W[ 4 ][ 2 ];  15 +  1 vs 12;  choose W[ 4 ][ 2 ] =  12
-Woring on W[ 4 ][ 4 ];   2 +  1 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 5 ];  19 +  1 vs 80;  choose W[ 4 ][ 5 ] =  19 +  1
-Woring on W[ 4 ][ 6 ];   5 +  1 vs -1;  choose W[ 4 ][ 6 ] =   5 +  1
-Woring on W[ 5 ][ 0 ];   6 + -1 vs -1;  choose W[ 5 ][ 0 ] =  -1
-Woring on W[ 5 ][ 1 ];   5 + -1 vs -1;  choose W[ 5 ][ 1 ] =  -1
-Woring on W[ 5 ][ 2 ];  15 + -1 vs -1;  choose W[ 5 ][ 2 ] =  -1
-Woring on W[ 5 ][ 4 ];   2 + -1 vs -1;  choose W[ 5 ][ 4 ] =  -1
-Woring on W[ 5 ][ 5 ];  19 + -1 vs  0;  choose W[ 5 ][ 5 ] =   0
-Woring on W[ 5 ][ 6 ];   5 + -1 vs 10;  choose W[ 5 ][ 6 ] =  10
-Woring on W[ 6 ][ 0 ];   6 +  8 vs -1;  choose W[ 6 ][ 0 ] =   6 +  8
-Woring on W[ 6 ][ 1 ];   5 +  8 vs -1;  choose W[ 6 ][ 1 ] =   5 +  8
-Woring on W[ 6 ][ 2 ];  15 +  8 vs -1;  choose W[ 6 ][ 2 ] =  15 +  8
-Woring on W[ 6 ][ 4 ];   2 +  8 vs -1;  choose W[ 6 ][ 4 ] =   2 +  8
-Woring on W[ 6 ][ 5 ];  19 +  8 vs -1;  choose W[ 6 ][ 5 ] =  19 +  8
-Woring on W[ 6 ][ 6 ];   5 +  8 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 0 ];   0 vs  6 + 36;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 1 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 1 ];   4 vs  5 + 36;  choose W[ 0 ][ 1 ] =   4
+W[ 0 ][ 2 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 2 ];  -1 vs 15 + 36;  choose W[ 0 ][ 2 ] =  15 + 36
+P[ 0 ][ 2 ] =          3
+W[ 0 ][ 4 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 4 ];  -1 vs  2 + 36;  choose W[ 0 ][ 4 ] =   2 + 36
+P[ 0 ][ 4 ] =          3
+W[ 0 ][ 5 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 5 ];  10 vs 19 + 36;  choose W[ 0 ][ 5 ] =  10
+W[ 0 ][ 6 ] vs W[ 0 ][ 3 ] + W[ 3 ][ 6 ];  -1 vs  5 + 36;  choose W[ 0 ][ 6 ] =   5 + 36
+P[ 0 ][ 6 ] =          3
+W[ 1 ][ 0 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 0 ];   3 vs  6 + 18;  choose W[ 1 ][ 0 ] =   3
+W[ 1 ][ 1 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 1 ];   0 vs  5 + 18;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 2 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 2 ];  -1 vs 15 + 18;  choose W[ 1 ][ 2 ] =  15 + 18
+P[ 1 ][ 2 ] =          3
+W[ 1 ][ 4 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 4 ];  -1 vs  2 + 18;  choose W[ 1 ][ 4 ] =   2 + 18
+P[ 1 ][ 4 ] =          3
+W[ 1 ][ 5 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 5 ];  20 vs 19 + 18;  choose W[ 1 ][ 5 ] =  20
+W[ 1 ][ 6 ] vs W[ 1 ][ 3 ] + W[ 3 ][ 6 ];  -1 vs  5 + 18;  choose W[ 1 ][ 6 ] =   5 + 18
+P[ 1 ][ 6 ] =          3
+W[ 2 ][ 0 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 0 ];   6 vs  6 + 36;  choose W[ 2 ][ 0 ] =   6
+W[ 2 ][ 1 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 1 ];   6 vs  5 + 36;  choose W[ 2 ][ 1 ] =   6
+W[ 2 ][ 2 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 2 ];   0 vs 15 + 36;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 4 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 4 ];  -1 vs  2 + 36;  choose W[ 2 ][ 4 ] =   2 + 36
+P[ 2 ][ 4 ] =          3
+W[ 2 ][ 5 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 5 ];  40 vs 19 + 36;  choose W[ 2 ][ 5 ] =  40
+W[ 2 ][ 6 ] vs W[ 2 ][ 3 ] + W[ 3 ][ 6 ];  -1 vs  5 + 36;  choose W[ 2 ][ 6 ] =   5 + 36
+P[ 2 ][ 6 ] =          3
+W[ 4 ][ 0 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 0 ];  12 vs  6 +  1;  choose W[ 4 ][ 0 ] =   6 +  1
+P[ 4 ][ 0 ] =          3
+W[ 4 ][ 1 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 1 ];  12 vs  5 +  1;  choose W[ 4 ][ 1 ] =   5 +  1
+P[ 4 ][ 1 ] =          3
+W[ 4 ][ 2 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 2 ];  12 vs 15 +  1;  choose W[ 4 ][ 2 ] =  12
+W[ 4 ][ 4 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 4 ];   0 vs  2 +  1;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 5 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 5 ];  80 vs 19 +  1;  choose W[ 4 ][ 5 ] =  19 +  1
+P[ 4 ][ 5 ] =          3
+W[ 4 ][ 6 ] vs W[ 4 ][ 3 ] + W[ 3 ][ 6 ];  -1 vs  5 +  1;  choose W[ 4 ][ 6 ] =   5 +  1
+P[ 4 ][ 6 ] =          3
+W[ 5 ][ 0 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 0 ];  -1 vs  6 + -1;  choose W[ 5 ][ 0 ] =  -1
+W[ 5 ][ 1 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 1 ];  -1 vs  5 + -1;  choose W[ 5 ][ 1 ] =  -1
+W[ 5 ][ 2 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 2 ];  -1 vs 15 + -1;  choose W[ 5 ][ 2 ] =  -1
+W[ 5 ][ 4 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 4 ];  -1 vs  2 + -1;  choose W[ 5 ][ 4 ] =  -1
+W[ 5 ][ 5 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 5 ];   0 vs 19 + -1;  choose W[ 5 ][ 5 ] =   0
+W[ 5 ][ 6 ] vs W[ 5 ][ 3 ] + W[ 3 ][ 6 ];  10 vs  5 + -1;  choose W[ 5 ][ 6 ] =  10
+W[ 6 ][ 0 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 0 ];  -1 vs  6 +  8;  choose W[ 6 ][ 0 ] =   6 +  8
+P[ 6 ][ 0 ] =          3
+W[ 6 ][ 1 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 1 ];  -1 vs  5 +  8;  choose W[ 6 ][ 1 ] =   5 +  8
+P[ 6 ][ 1 ] =          3
+W[ 6 ][ 2 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 2 ];  -1 vs 15 +  8;  choose W[ 6 ][ 2 ] =  15 +  8
+P[ 6 ][ 2 ] =          3
+W[ 6 ][ 4 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 4 ];  -1 vs  2 +  8;  choose W[ 6 ][ 4 ] =   2 +  8
+P[ 6 ][ 4 ] =          3
+W[ 6 ][ 5 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 5 ];  -1 vs 19 +  8;  choose W[ 6 ][ 5 ] =  19 +  8
+P[ 6 ][ 5 ] =          3
+W[ 6 ][ 6 ] vs W[ 6 ][ 3 ] + W[ 3 ][ 6 ];   0 vs  5 +  8;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, 30, 36, 4, 10, 10]
 [3, 0, 30, 18, 4, 20, 10]
 [6, 6, 0, 36, 4, 40, 10]
@@ -199,46 +249,62 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [12, 10, 30, 8, 4, 38, 0]
 
+The P matrix is
+[-1, -1, 3, 1, 3, -1, 3]
+[-1, -1, 3, -1, 3, 0, 3]
+[1, -1, -1, 1, 3, 1, 3]
+[1, -1, -1, -1, -1, -1, -1]
+[3, 3, -1, -1, -1, 3, 3]
+[-1, -1, -1, -1, -1, -1, -1]
+[3, 3, 3, -1, 3, 3, -1]
 
 Skiping 4 . We are working on [0, 1, 2, 3, 5, 6]
-Woring on W[ 0 ][ 0 ];  12 +  4 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 1 ];  10 +  4 vs  4;  choose W[ 0 ][ 1 ] =   4
-Woring on W[ 0 ][ 2 ];  12 +  4 vs 30;  choose W[ 0 ][ 2 ] =  12 +  4
-Woring on W[ 0 ][ 3 ];   1 +  4 vs 36;  choose W[ 0 ][ 3 ] =   1 +  4
-Woring on W[ 0 ][ 5 ];  38 +  4 vs 10;  choose W[ 0 ][ 5 ] =  10
-Woring on W[ 0 ][ 6 ];  10 +  4 vs 10;  choose W[ 0 ][ 6 ] =  10
-Woring on W[ 1 ][ 0 ];  12 +  4 vs  3;  choose W[ 1 ][ 0 ] =   3
-Woring on W[ 1 ][ 1 ];  10 +  4 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 2 ];  12 +  4 vs 30;  choose W[ 1 ][ 2 ] =  12 +  4
-Woring on W[ 1 ][ 3 ];   1 +  4 vs 18;  choose W[ 1 ][ 3 ] =   1 +  4
-Woring on W[ 1 ][ 5 ];  38 +  4 vs 20;  choose W[ 1 ][ 5 ] =  20
-Woring on W[ 1 ][ 6 ];  10 +  4 vs 10;  choose W[ 1 ][ 6 ] =  10
-Woring on W[ 2 ][ 0 ];  12 +  4 vs  6;  choose W[ 2 ][ 0 ] =   6
-Woring on W[ 2 ][ 1 ];  10 +  4 vs  6;  choose W[ 2 ][ 1 ] =   6
-Woring on W[ 2 ][ 2 ];  12 +  4 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 3 ];   1 +  4 vs 36;  choose W[ 2 ][ 3 ] =   1 +  4
-Woring on W[ 2 ][ 5 ];  38 +  4 vs 40;  choose W[ 2 ][ 5 ] =  40
-Woring on W[ 2 ][ 6 ];  10 +  4 vs 10;  choose W[ 2 ][ 6 ] =  10
-Woring on W[ 3 ][ 0 ];  12 +  2 vs  6;  choose W[ 3 ][ 0 ] =   6
-Woring on W[ 3 ][ 1 ];  10 +  2 vs  5;  choose W[ 3 ][ 1 ] =   5
-Woring on W[ 3 ][ 2 ];  12 +  2 vs 15;  choose W[ 3 ][ 2 ] =  12 +  2
-Woring on W[ 3 ][ 3 ];   1 +  2 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 5 ];  38 +  2 vs 19;  choose W[ 3 ][ 5 ] =  19
-Woring on W[ 3 ][ 6 ];  10 +  2 vs  5;  choose W[ 3 ][ 6 ] =   5
-Woring on W[ 5 ][ 0 ];  12 + -1 vs -1;  choose W[ 5 ][ 0 ] =  -1
-Woring on W[ 5 ][ 1 ];  10 + -1 vs -1;  choose W[ 5 ][ 1 ] =  -1
-Woring on W[ 5 ][ 2 ];  12 + -1 vs -1;  choose W[ 5 ][ 2 ] =  -1
-Woring on W[ 5 ][ 3 ];   1 + -1 vs -1;  choose W[ 5 ][ 3 ] =  -1
-Woring on W[ 5 ][ 5 ];  38 + -1 vs  0;  choose W[ 5 ][ 5 ] =   0
-Woring on W[ 5 ][ 6 ];  10 + -1 vs 10;  choose W[ 5 ][ 6 ] =  10
-Woring on W[ 6 ][ 0 ];  12 +  4 vs 12;  choose W[ 6 ][ 0 ] =  12
-Woring on W[ 6 ][ 1 ];  10 +  4 vs 10;  choose W[ 6 ][ 1 ] =  10
-Woring on W[ 6 ][ 2 ];  12 +  4 vs 30;  choose W[ 6 ][ 2 ] =  12 +  4
-Woring on W[ 6 ][ 3 ];   1 +  4 vs  8;  choose W[ 6 ][ 3 ] =   1 +  4
-Woring on W[ 6 ][ 5 ];  38 +  4 vs 38;  choose W[ 6 ][ 5 ] =  38
-Woring on W[ 6 ][ 6 ];  10 +  4 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 0 ];   0 vs 12 +  4;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 1 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 1 ];   4 vs 10 +  4;  choose W[ 0 ][ 1 ] =   4
+W[ 0 ][ 2 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 2 ];  30 vs 12 +  4;  choose W[ 0 ][ 2 ] =  12 +  4
+P[ 0 ][ 2 ] =          4
+W[ 0 ][ 3 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 3 ];  36 vs  1 +  4;  choose W[ 0 ][ 3 ] =   1 +  4
+P[ 0 ][ 3 ] =          4
+W[ 0 ][ 5 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 5 ];  10 vs 38 +  4;  choose W[ 0 ][ 5 ] =  10
+W[ 0 ][ 6 ] vs W[ 0 ][ 4 ] + W[ 4 ][ 6 ];  10 vs 10 +  4;  choose W[ 0 ][ 6 ] =  10
+W[ 1 ][ 0 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 0 ];   3 vs 12 +  4;  choose W[ 1 ][ 0 ] =   3
+W[ 1 ][ 1 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 1 ];   0 vs 10 +  4;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 2 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 2 ];  30 vs 12 +  4;  choose W[ 1 ][ 2 ] =  12 +  4
+P[ 1 ][ 2 ] =          4
+W[ 1 ][ 3 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 3 ];  18 vs  1 +  4;  choose W[ 1 ][ 3 ] =   1 +  4
+P[ 1 ][ 3 ] =          4
+W[ 1 ][ 5 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 5 ];  20 vs 38 +  4;  choose W[ 1 ][ 5 ] =  20
+W[ 1 ][ 6 ] vs W[ 1 ][ 4 ] + W[ 4 ][ 6 ];  10 vs 10 +  4;  choose W[ 1 ][ 6 ] =  10
+W[ 2 ][ 0 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 0 ];   6 vs 12 +  4;  choose W[ 2 ][ 0 ] =   6
+W[ 2 ][ 1 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 1 ];   6 vs 10 +  4;  choose W[ 2 ][ 1 ] =   6
+W[ 2 ][ 2 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 2 ];   0 vs 12 +  4;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 3 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 3 ];  36 vs  1 +  4;  choose W[ 2 ][ 3 ] =   1 +  4
+P[ 2 ][ 3 ] =          4
+W[ 2 ][ 5 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 5 ];  40 vs 38 +  4;  choose W[ 2 ][ 5 ] =  40
+W[ 2 ][ 6 ] vs W[ 2 ][ 4 ] + W[ 4 ][ 6 ];  10 vs 10 +  4;  choose W[ 2 ][ 6 ] =  10
+W[ 3 ][ 0 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 0 ];   6 vs 12 +  2;  choose W[ 3 ][ 0 ] =   6
+W[ 3 ][ 1 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 1 ];   5 vs 10 +  2;  choose W[ 3 ][ 1 ] =   5
+W[ 3 ][ 2 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 2 ];  15 vs 12 +  2;  choose W[ 3 ][ 2 ] =  12 +  2
+P[ 3 ][ 2 ] =          4
+W[ 3 ][ 3 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 3 ];   0 vs  1 +  2;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 5 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 5 ];  19 vs 38 +  2;  choose W[ 3 ][ 5 ] =  19
+W[ 3 ][ 6 ] vs W[ 3 ][ 4 ] + W[ 4 ][ 6 ];   5 vs 10 +  2;  choose W[ 3 ][ 6 ] =   5
+W[ 5 ][ 0 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 0 ];  -1 vs 12 + -1;  choose W[ 5 ][ 0 ] =  -1
+W[ 5 ][ 1 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 1 ];  -1 vs 10 + -1;  choose W[ 5 ][ 1 ] =  -1
+W[ 5 ][ 2 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 2 ];  -1 vs 12 + -1;  choose W[ 5 ][ 2 ] =  -1
+W[ 5 ][ 3 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 3 ];  -1 vs  1 + -1;  choose W[ 5 ][ 3 ] =  -1
+W[ 5 ][ 5 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 5 ];   0 vs 38 + -1;  choose W[ 5 ][ 5 ] =   0
+W[ 5 ][ 6 ] vs W[ 5 ][ 4 ] + W[ 4 ][ 6 ];  10 vs 10 + -1;  choose W[ 5 ][ 6 ] =  10
+W[ 6 ][ 0 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 0 ];  12 vs 12 +  4;  choose W[ 6 ][ 0 ] =  12
+W[ 6 ][ 1 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 1 ];  10 vs 10 +  4;  choose W[ 6 ][ 1 ] =  10
+W[ 6 ][ 2 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 2 ];  30 vs 12 +  4;  choose W[ 6 ][ 2 ] =  12 +  4
+P[ 6 ][ 2 ] =          4
+W[ 6 ][ 3 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 3 ];   8 vs  1 +  4;  choose W[ 6 ][ 3 ] =   1 +  4
+P[ 6 ][ 3 ] =          4
+W[ 6 ][ 5 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 5 ];  38 vs 38 +  4;  choose W[ 6 ][ 5 ] =  38
+W[ 6 ][ 6 ] vs W[ 6 ][ 4 ] + W[ 4 ][ 6 ];   0 vs 10 +  4;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, 24, 2, 4, 10, 10]
 [3, 0, 24, 2, 4, 20, 10]
 [6, 6, 0, 2, 4, 40, 10]
@@ -247,46 +313,54 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [12, 10, 24, 2, 4, 38, 0]
 
+The P matrix is
+[-1, -1, 4, 4, 3, -1, 3]
+[-1, -1, 4, 4, 3, 0, 3]
+[1, -1, -1, 4, 3, 1, 3]
+[1, -1, 4, -1, -1, -1, -1]
+[3, 3, -1, -1, -1, 3, 3]
+[-1, -1, -1, -1, -1, -1, -1]
+[3, 3, 4, 4, 3, 3, -1]
 
 Skiping 5 . We are working on [0, 1, 2, 3, 4, 6]
-Woring on W[ 0 ][ 0 ];  -1 + 10 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 1 ];  -1 + 10 vs  4;  choose W[ 0 ][ 1 ] =   4
-Woring on W[ 0 ][ 2 ];  -1 + 10 vs 24;  choose W[ 0 ][ 2 ] =  24
-Woring on W[ 0 ][ 3 ];  -1 + 10 vs  2;  choose W[ 0 ][ 3 ] =   2
-Woring on W[ 0 ][ 4 ];  -1 + 10 vs  4;  choose W[ 0 ][ 4 ] =   4
-Woring on W[ 0 ][ 6 ];  10 + 10 vs 10;  choose W[ 0 ][ 6 ] =  10
-Woring on W[ 1 ][ 0 ];  -1 + 20 vs  3;  choose W[ 1 ][ 0 ] =   3
-Woring on W[ 1 ][ 1 ];  -1 + 20 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 2 ];  -1 + 20 vs 24;  choose W[ 1 ][ 2 ] =  24
-Woring on W[ 1 ][ 3 ];  -1 + 20 vs  2;  choose W[ 1 ][ 3 ] =   2
-Woring on W[ 1 ][ 4 ];  -1 + 20 vs  4;  choose W[ 1 ][ 4 ] =   4
-Woring on W[ 1 ][ 6 ];  10 + 20 vs 10;  choose W[ 1 ][ 6 ] =  10
-Woring on W[ 2 ][ 0 ];  -1 + 40 vs  6;  choose W[ 2 ][ 0 ] =   6
-Woring on W[ 2 ][ 1 ];  -1 + 40 vs  6;  choose W[ 2 ][ 1 ] =   6
-Woring on W[ 2 ][ 2 ];  -1 + 40 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 3 ];  -1 + 40 vs  2;  choose W[ 2 ][ 3 ] =   2
-Woring on W[ 2 ][ 4 ];  -1 + 40 vs  4;  choose W[ 2 ][ 4 ] =   4
-Woring on W[ 2 ][ 6 ];  10 + 40 vs 10;  choose W[ 2 ][ 6 ] =  10
-Woring on W[ 3 ][ 0 ];  -1 + 19 vs  6;  choose W[ 3 ][ 0 ] =   6
-Woring on W[ 3 ][ 1 ];  -1 + 19 vs  5;  choose W[ 3 ][ 1 ] =   5
-Woring on W[ 3 ][ 2 ];  -1 + 19 vs 24;  choose W[ 3 ][ 2 ] =  24
-Woring on W[ 3 ][ 3 ];  -1 + 19 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 4 ];  -1 + 19 vs  2;  choose W[ 3 ][ 4 ] =   2
-Woring on W[ 3 ][ 6 ];  10 + 19 vs  5;  choose W[ 3 ][ 6 ] =   5
-Woring on W[ 4 ][ 0 ];  -1 + 38 vs 12;  choose W[ 4 ][ 0 ] =  12
-Woring on W[ 4 ][ 1 ];  -1 + 38 vs 10;  choose W[ 4 ][ 1 ] =  10
-Woring on W[ 4 ][ 2 ];  -1 + 38 vs 12;  choose W[ 4 ][ 2 ] =  12
-Woring on W[ 4 ][ 3 ];  -1 + 38 vs  1;  choose W[ 4 ][ 3 ] =   1
-Woring on W[ 4 ][ 4 ];  -1 + 38 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 6 ];  10 + 38 vs 10;  choose W[ 4 ][ 6 ] =  10
-Woring on W[ 6 ][ 0 ];  -1 + 38 vs 12;  choose W[ 6 ][ 0 ] =  12
-Woring on W[ 6 ][ 1 ];  -1 + 38 vs 10;  choose W[ 6 ][ 1 ] =  10
-Woring on W[ 6 ][ 2 ];  -1 + 38 vs 24;  choose W[ 6 ][ 2 ] =  24
-Woring on W[ 6 ][ 3 ];  -1 + 38 vs  2;  choose W[ 6 ][ 3 ] =   2
-Woring on W[ 6 ][ 4 ];  -1 + 38 vs  4;  choose W[ 6 ][ 4 ] =   4
-Woring on W[ 6 ][ 6 ];  10 + 38 vs  0;  choose W[ 6 ][ 6 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 0 ];   0 vs -1 + 10;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 1 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 1 ];   4 vs -1 + 10;  choose W[ 0 ][ 1 ] =   4
+W[ 0 ][ 2 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 2 ];  24 vs -1 + 10;  choose W[ 0 ][ 2 ] =  24
+W[ 0 ][ 3 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 3 ];   2 vs -1 + 10;  choose W[ 0 ][ 3 ] =   2
+W[ 0 ][ 4 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 4 ];   4 vs -1 + 10;  choose W[ 0 ][ 4 ] =   4
+W[ 0 ][ 6 ] vs W[ 0 ][ 5 ] + W[ 5 ][ 6 ];  10 vs 10 + 10;  choose W[ 0 ][ 6 ] =  10
+W[ 1 ][ 0 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 0 ];   3 vs -1 + 20;  choose W[ 1 ][ 0 ] =   3
+W[ 1 ][ 1 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 1 ];   0 vs -1 + 20;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 2 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 2 ];  24 vs -1 + 20;  choose W[ 1 ][ 2 ] =  24
+W[ 1 ][ 3 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 3 ];   2 vs -1 + 20;  choose W[ 1 ][ 3 ] =   2
+W[ 1 ][ 4 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 4 ];   4 vs -1 + 20;  choose W[ 1 ][ 4 ] =   4
+W[ 1 ][ 6 ] vs W[ 1 ][ 5 ] + W[ 5 ][ 6 ];  10 vs 10 + 20;  choose W[ 1 ][ 6 ] =  10
+W[ 2 ][ 0 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 0 ];   6 vs -1 + 40;  choose W[ 2 ][ 0 ] =   6
+W[ 2 ][ 1 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 1 ];   6 vs -1 + 40;  choose W[ 2 ][ 1 ] =   6
+W[ 2 ][ 2 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 2 ];   0 vs -1 + 40;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 3 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 3 ];   2 vs -1 + 40;  choose W[ 2 ][ 3 ] =   2
+W[ 2 ][ 4 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 4 ];   4 vs -1 + 40;  choose W[ 2 ][ 4 ] =   4
+W[ 2 ][ 6 ] vs W[ 2 ][ 5 ] + W[ 5 ][ 6 ];  10 vs 10 + 40;  choose W[ 2 ][ 6 ] =  10
+W[ 3 ][ 0 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 0 ];   6 vs -1 + 19;  choose W[ 3 ][ 0 ] =   6
+W[ 3 ][ 1 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 1 ];   5 vs -1 + 19;  choose W[ 3 ][ 1 ] =   5
+W[ 3 ][ 2 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 2 ];  24 vs -1 + 19;  choose W[ 3 ][ 2 ] =  24
+W[ 3 ][ 3 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 3 ];   0 vs -1 + 19;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 4 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 4 ];   2 vs -1 + 19;  choose W[ 3 ][ 4 ] =   2
+W[ 3 ][ 6 ] vs W[ 3 ][ 5 ] + W[ 5 ][ 6 ];   5 vs 10 + 19;  choose W[ 3 ][ 6 ] =   5
+W[ 4 ][ 0 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 0 ];  12 vs -1 + 38;  choose W[ 4 ][ 0 ] =  12
+W[ 4 ][ 1 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 1 ];  10 vs -1 + 38;  choose W[ 4 ][ 1 ] =  10
+W[ 4 ][ 2 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 2 ];  12 vs -1 + 38;  choose W[ 4 ][ 2 ] =  12
+W[ 4 ][ 3 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 3 ];   1 vs -1 + 38;  choose W[ 4 ][ 3 ] =   1
+W[ 4 ][ 4 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 4 ];   0 vs -1 + 38;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 6 ] vs W[ 4 ][ 5 ] + W[ 5 ][ 6 ];  10 vs 10 + 38;  choose W[ 4 ][ 6 ] =  10
+W[ 6 ][ 0 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 0 ];  12 vs -1 + 38;  choose W[ 6 ][ 0 ] =  12
+W[ 6 ][ 1 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 1 ];  10 vs -1 + 38;  choose W[ 6 ][ 1 ] =  10
+W[ 6 ][ 2 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 2 ];  24 vs -1 + 38;  choose W[ 6 ][ 2 ] =  24
+W[ 6 ][ 3 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 3 ];   2 vs -1 + 38;  choose W[ 6 ][ 3 ] =   2
+W[ 6 ][ 4 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 4 ];   4 vs -1 + 38;  choose W[ 6 ][ 4 ] =   4
+W[ 6 ][ 6 ] vs W[ 6 ][ 5 ] + W[ 5 ][ 6 ];   0 vs 10 + 38;  choose W[ 6 ][ 6 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, 24, 2, 4, 10, 10]
 [3, 0, 24, 2, 4, 20, 10]
 [6, 6, 0, 2, 4, 40, 10]
@@ -295,46 +369,59 @@ Now, W is
 [-1, -1, -1, -1, -1, 0, 10]
 [12, 10, 24, 2, 4, 38, 0]
 
+The P matrix is
+[-1, -1, 4, 4, 3, -1, 3]
+[-1, -1, 4, 4, 3, 0, 3]
+[1, -1, -1, 4, 3, 1, 3]
+[1, -1, 4, -1, -1, -1, -1]
+[3, 3, -1, -1, -1, 3, 3]
+[-1, -1, -1, -1, -1, -1, -1]
+[3, 3, 4, 4, 3, 3, -1]
 
 Skiping 6 . We are working on [0, 1, 2, 3, 4, 5]
-Woring on W[ 0 ][ 0 ];  12 + 10 vs  0;  choose W[ 0 ][ 0 ] =   0
-Woring on W[ 0 ][ 1 ];  10 + 10 vs  4;  choose W[ 0 ][ 1 ] =   4
-Woring on W[ 0 ][ 2 ];  24 + 10 vs 24;  choose W[ 0 ][ 2 ] =  24
-Woring on W[ 0 ][ 3 ];   2 + 10 vs  2;  choose W[ 0 ][ 3 ] =   2
-Woring on W[ 0 ][ 4 ];   4 + 10 vs  4;  choose W[ 0 ][ 4 ] =   4
-Woring on W[ 0 ][ 5 ];  38 + 10 vs 10;  choose W[ 0 ][ 5 ] =  10
-Woring on W[ 1 ][ 0 ];  12 + 10 vs  3;  choose W[ 1 ][ 0 ] =   3
-Woring on W[ 1 ][ 1 ];  10 + 10 vs  0;  choose W[ 1 ][ 1 ] =   0
-Woring on W[ 1 ][ 2 ];  24 + 10 vs 24;  choose W[ 1 ][ 2 ] =  24
-Woring on W[ 1 ][ 3 ];   2 + 10 vs  2;  choose W[ 1 ][ 3 ] =   2
-Woring on W[ 1 ][ 4 ];   4 + 10 vs  4;  choose W[ 1 ][ 4 ] =   4
-Woring on W[ 1 ][ 5 ];  38 + 10 vs 20;  choose W[ 1 ][ 5 ] =  20
-Woring on W[ 2 ][ 0 ];  12 + 10 vs  6;  choose W[ 2 ][ 0 ] =   6
-Woring on W[ 2 ][ 1 ];  10 + 10 vs  6;  choose W[ 2 ][ 1 ] =   6
-Woring on W[ 2 ][ 2 ];  24 + 10 vs  0;  choose W[ 2 ][ 2 ] =   0
-Woring on W[ 2 ][ 3 ];   2 + 10 vs  2;  choose W[ 2 ][ 3 ] =   2
-Woring on W[ 2 ][ 4 ];   4 + 10 vs  4;  choose W[ 2 ][ 4 ] =   4
-Woring on W[ 2 ][ 5 ];  38 + 10 vs 40;  choose W[ 2 ][ 5 ] =  40
-Woring on W[ 3 ][ 0 ];  12 +  5 vs  6;  choose W[ 3 ][ 0 ] =   6
-Woring on W[ 3 ][ 1 ];  10 +  5 vs  5;  choose W[ 3 ][ 1 ] =   5
-Woring on W[ 3 ][ 2 ];  24 +  5 vs 24;  choose W[ 3 ][ 2 ] =  24
-Woring on W[ 3 ][ 3 ];   2 +  5 vs  0;  choose W[ 3 ][ 3 ] =   0
-Woring on W[ 3 ][ 4 ];   4 +  5 vs  2;  choose W[ 3 ][ 4 ] =   2
-Woring on W[ 3 ][ 5 ];  38 +  5 vs 19;  choose W[ 3 ][ 5 ] =  19
-Woring on W[ 4 ][ 0 ];  12 + 10 vs 12;  choose W[ 4 ][ 0 ] =  12
-Woring on W[ 4 ][ 1 ];  10 + 10 vs 10;  choose W[ 4 ][ 1 ] =  10
-Woring on W[ 4 ][ 2 ];  24 + 10 vs 12;  choose W[ 4 ][ 2 ] =  12
-Woring on W[ 4 ][ 3 ];   2 + 10 vs  1;  choose W[ 4 ][ 3 ] =   1
-Woring on W[ 4 ][ 4 ];   4 + 10 vs  0;  choose W[ 4 ][ 4 ] =   0
-Woring on W[ 4 ][ 5 ];  38 + 10 vs 38;  choose W[ 4 ][ 5 ] =  38
-Woring on W[ 5 ][ 0 ];  12 + 10 vs -1;  choose W[ 5 ][ 0 ] =  12 + 10
-Woring on W[ 5 ][ 1 ];  10 + 10 vs -1;  choose W[ 5 ][ 1 ] =  10 + 10
-Woring on W[ 5 ][ 2 ];  24 + 10 vs -1;  choose W[ 5 ][ 2 ] =  24 + 10
-Woring on W[ 5 ][ 3 ];   2 + 10 vs -1;  choose W[ 5 ][ 3 ] =   2 + 10
-Woring on W[ 5 ][ 4 ];   4 + 10 vs -1;  choose W[ 5 ][ 4 ] =   4 + 10
-Woring on W[ 5 ][ 5 ];  38 + 10 vs  0;  choose W[ 5 ][ 5 ] =   0
+W[ 0 ][ 0 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 0 ];   0 vs 12 + 10;  choose W[ 0 ][ 0 ] =   0
+W[ 0 ][ 1 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 1 ];   4 vs 10 + 10;  choose W[ 0 ][ 1 ] =   4
+W[ 0 ][ 2 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 2 ];  24 vs 24 + 10;  choose W[ 0 ][ 2 ] =  24
+W[ 0 ][ 3 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 3 ];   2 vs  2 + 10;  choose W[ 0 ][ 3 ] =   2
+W[ 0 ][ 4 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 4 ];   4 vs  4 + 10;  choose W[ 0 ][ 4 ] =   4
+W[ 0 ][ 5 ] vs W[ 0 ][ 6 ] + W[ 6 ][ 5 ];  10 vs 38 + 10;  choose W[ 0 ][ 5 ] =  10
+W[ 1 ][ 0 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 0 ];   3 vs 12 + 10;  choose W[ 1 ][ 0 ] =   3
+W[ 1 ][ 1 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 1 ];   0 vs 10 + 10;  choose W[ 1 ][ 1 ] =   0
+W[ 1 ][ 2 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 2 ];  24 vs 24 + 10;  choose W[ 1 ][ 2 ] =  24
+W[ 1 ][ 3 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 3 ];   2 vs  2 + 10;  choose W[ 1 ][ 3 ] =   2
+W[ 1 ][ 4 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 4 ];   4 vs  4 + 10;  choose W[ 1 ][ 4 ] =   4
+W[ 1 ][ 5 ] vs W[ 1 ][ 6 ] + W[ 6 ][ 5 ];  20 vs 38 + 10;  choose W[ 1 ][ 5 ] =  20
+W[ 2 ][ 0 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 0 ];   6 vs 12 + 10;  choose W[ 2 ][ 0 ] =   6
+W[ 2 ][ 1 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 1 ];   6 vs 10 + 10;  choose W[ 2 ][ 1 ] =   6
+W[ 2 ][ 2 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 2 ];   0 vs 24 + 10;  choose W[ 2 ][ 2 ] =   0
+W[ 2 ][ 3 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 3 ];   2 vs  2 + 10;  choose W[ 2 ][ 3 ] =   2
+W[ 2 ][ 4 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 4 ];   4 vs  4 + 10;  choose W[ 2 ][ 4 ] =   4
+W[ 2 ][ 5 ] vs W[ 2 ][ 6 ] + W[ 6 ][ 5 ];  40 vs 38 + 10;  choose W[ 2 ][ 5 ] =  40
+W[ 3 ][ 0 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 0 ];   6 vs 12 +  5;  choose W[ 3 ][ 0 ] =   6
+W[ 3 ][ 1 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 1 ];   5 vs 10 +  5;  choose W[ 3 ][ 1 ] =   5
+W[ 3 ][ 2 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 2 ];  24 vs 24 +  5;  choose W[ 3 ][ 2 ] =  24
+W[ 3 ][ 3 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 3 ];   0 vs  2 +  5;  choose W[ 3 ][ 3 ] =   0
+W[ 3 ][ 4 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 4 ];   2 vs  4 +  5;  choose W[ 3 ][ 4 ] =   2
+W[ 3 ][ 5 ] vs W[ 3 ][ 6 ] + W[ 6 ][ 5 ];  19 vs 38 +  5;  choose W[ 3 ][ 5 ] =  19
+W[ 4 ][ 0 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 0 ];  12 vs 12 + 10;  choose W[ 4 ][ 0 ] =  12
+W[ 4 ][ 1 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 1 ];  10 vs 10 + 10;  choose W[ 4 ][ 1 ] =  10
+W[ 4 ][ 2 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 2 ];  12 vs 24 + 10;  choose W[ 4 ][ 2 ] =  12
+W[ 4 ][ 3 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 3 ];   1 vs  2 + 10;  choose W[ 4 ][ 3 ] =   1
+W[ 4 ][ 4 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 4 ];   0 vs  4 + 10;  choose W[ 4 ][ 4 ] =   0
+W[ 4 ][ 5 ] vs W[ 4 ][ 6 ] + W[ 6 ][ 5 ];  38 vs 38 + 10;  choose W[ 4 ][ 5 ] =  38
+W[ 5 ][ 0 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 0 ];  -1 vs 12 + 10;  choose W[ 5 ][ 0 ] =  12 + 10
+P[ 5 ][ 0 ] =          6
+W[ 5 ][ 1 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 1 ];  -1 vs 10 + 10;  choose W[ 5 ][ 1 ] =  10 + 10
+P[ 5 ][ 1 ] =          6
+W[ 5 ][ 2 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 2 ];  -1 vs 24 + 10;  choose W[ 5 ][ 2 ] =  24 + 10
+P[ 5 ][ 2 ] =          6
+W[ 5 ][ 3 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 3 ];  -1 vs  2 + 10;  choose W[ 5 ][ 3 ] =   2 + 10
+P[ 5 ][ 3 ] =          6
+W[ 5 ][ 4 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 4 ];  -1 vs  4 + 10;  choose W[ 5 ][ 4 ] =   4 + 10
+P[ 5 ][ 4 ] =          6
+W[ 5 ][ 5 ] vs W[ 5 ][ 6 ] + W[ 6 ][ 5 ];   0 vs 38 + 10;  choose W[ 5 ][ 5 ] =   0
 
-Now, W is
+Now, D is
 [0, 4, 24, 2, 4, 10, 10]
 [3, 0, 24, 2, 4, 20, 10]
 [6, 6, 0, 2, 4, 40, 10]
@@ -342,3 +429,12 @@ Now, W is
 [12, 10, 12, 1, 0, 38, 10]
 [24, 20, 48, 4, 8, 0, 10]
 [12, 10, 24, 2, 4, 38, 0]
+
+The P matrix is
+[-1, -1, 4, 4, 3, -1, 3]
+[-1, -1, 4, 4, 3, 0, 3]
+[1, -1, -1, 4, 3, 1, 3]
+[1, -1, 4, -1, -1, -1, -1]
+[3, 3, -1, -1, -1, 3, 3]
+[6, 6, 6, 6, 6, -1, -1]
+[3, 3, 4, 4, 3, 3, -1]
