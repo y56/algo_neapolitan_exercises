@@ -34,6 +34,9 @@ public class Main {
                     currentMin = A[i][k-1] + A[k+1][j];
                     currentk = k;
                 }
+                else{
+                    System.out.println(">  >  >  >");
+                }
             }
             this.minCost = currentMin;
             this.k = currentk;
