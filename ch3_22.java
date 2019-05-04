@@ -1,7 +1,8 @@
 public class Main {
     public static void printDoubleArray(double[][] M) {
         int N = M.length;
-        for (int i = 0; i <= N-1; i++){
+        int NN = M[0].length;
+        for (int i = 0; i <= NN; i++){
                 for (int j = 0; j <= N-2; j++){
                     System.out.print(M[i][j]+"     ");    
                 }
@@ -10,7 +11,8 @@ public class Main {
     }
     public static void printIntArray(int[][] M) {
         int N = M.length;
-        for (int i = 0; i <= N-1; i++){
+        int NN = M[0].length;
+        for (int i = 0; i <= NN; i++){
                 for (int j = 0; j <= N-2; j++){
                     System.out.print(M[i][j]+"     ");    
                 }
