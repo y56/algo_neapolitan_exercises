@@ -1,25 +1,25 @@
 public class Main {
-    static void printDoubleArray(double[][] M) {
+    public static void printDoubleArray(double[][] M) {
         int N = M.length;
         int NN = M[0].length;
         for (int i = 0; i <= NN; i++){
                 for (int j = 0; j <= N-2; j++){
                     System.out.print(M[i][j]+"     ");    
                 }
-                System.out.println();
+            System.out.println();
             }
     }
-    static void printIntArray(int[][] M) {
+    public static void printIntArray(int[][] M) {
         int N = M.length;
         int NN = M[0].length;
         for (int i = 0; i <= NN; i++){
                 for (int j = 0; j <= N-2; j++){
                     System.out.print(M[i][j]+"     ");    
                 }
-                System.out.println();
+            System.out.println();
             }
     }
-    public static double sumPArrayOver(int i, int j, double[] pArray){
+    public static double sumPArrayOver(int i, int j, double[] pArray) {
         double sum = 0;
         System.out.print(i + "     ");
         System.out.println(j + "===== sum over");
@@ -31,7 +31,7 @@ public class Main {
     public static class MinCostAndk {
         double minCost;
         int k;   
-        public MinCostAndk(int i, int j, double[][] A){
+        MinCostAndk(int i, int j, double[][] A){ // constructor
             double currentMinCost =  Double.MAX_VALUE;
             int currentk = 0;
             for (int k = i; k <= j; k++){
@@ -45,14 +45,14 @@ public class Main {
                     System.out.println(">  >  >  >");
                 }
             }
-            minCost = currentMinCost;
-            k = currentk;
+            this.minCost = currentMinCost;
+            this.k = currentk;
         }
     }
-    static class ArraysForOBST {
+    public static class ArraysForOBST {
         double[][] A;
         int[][] R;
-        ArraysForOBST(double[] pArray){ // constructor
+        public ArraysForOBST(double[] pArray){ // constructor
             int n = pArray.length-1;
             A = new double[n+2][n+1]; // the initail value will be 0.0
             R = new int[n+2][n+1];
@@ -85,17 +85,72 @@ public class Main {
                 }
             }
             printDoubleArray(A); System.out.println(); printIntArray(R);
+            this.A = A; 
+            this.R = R;
+        }
+         
+    }
+    public static class Node {
+        int keyValue;
+        Node left; 
+        Node right;
+        
+        Node(int keyValue) {
+            this.keyValue = keyValue;
+            left = null;
+            right = null;
         }
     }
-    class Node {
-
+    public static Node planter(int i, int j, int[][] R ) {
+        int keyValue = R[i][j];
+        if (keyValue == 0) {
+            return null;
+        }
+        else{
+            Node node = new Node(keyValue);
+            node.left = planter(i, keyValue-1, R);
+            node.right = planter(keyValue+1, j, R);
+            return node;
+        }
+    }
+    public static void printATree(Node node, String[] wordArray) {
+        if (node == null){
+            System.out.println("A Leaf has no further nodes!!!\n");
+        }
+        else {
+            System.out.print(node.keyValue + "   ");
+            System.out.println(wordArray[node.keyValue]);
+            System.out.println();
+            printATree(node.left, wordArray);
+            printATree(node.right, wordArray);
+        }
     }
     public static void main(String[] args) {
         // The keys are the indeces of the two arrays below.
-        //String[] wordArray = {"aaa","CASE", "ELSE", "END", "IF", "OF", "THEN"};
-        //double[] pArray = {-99.9, 0.05, 0.15, 0.05, 0.35, 0.05, 0.35};
-        double[] pArray = {-99.9, 3./8., 3./8., 1./8., 1./8.};
+        String[] wordArray = {"aaa","CASE", "ELSE", "END", "IF", "OF", "THEN"};
+        double[] pArray = {-99.9999, 0.05,   0.15,   0.05,  0.35, 0.05, 0.35};
+        //double[] pArray = {-99.9, 3./8., 3./8., 1./8., 1./8.};
+        int n  = pArray.length-1;
+        
+        // find the arrangement of the tree
         ArraysForOBST arraysForOBST  = new ArraysForOBST(pArray);
+        int[][] R = arraysForOBST.R;
+        double[][] A = arraysForOBST.A;
+        double optimalCost = A[1][n];
+        System.out.println(optimalCost);
+        
+        // plant the tree
+        Node root = planter(1, n, R);
+        
+        // show the tree
+        printATree(root, wordArray);
+
+
+        
+        
+        
+        
         System.out.println("The end.");
+
     }
 }
