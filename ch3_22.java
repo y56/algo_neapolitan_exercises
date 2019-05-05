@@ -144,13 +144,7 @@ public class Main {
         
         // show the tree
         printATree(root, wordArray);
-
-
-        
-        
-        
         
         System.out.println("The end.");
-
     }
 }
