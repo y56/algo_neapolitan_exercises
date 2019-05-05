@@ -1,0 +1,178 @@
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+0.0     0.0     0.0     0.0     0.0     0.0     0.0     
+
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+0     0     0     0     0     0     0     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+-1     -1     -1     -1     -1     -1     -1     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+0.0     0.05     NaN     NaN     NaN     NaN     NaN     
+NaN     0.0     0.15     NaN     NaN     NaN     NaN     
+NaN     NaN     0.0     0.05     NaN     NaN     NaN     
+NaN     NaN     NaN     0.0     0.35     NaN     NaN     
+NaN     NaN     NaN     NaN     0.0     0.05     NaN     
+NaN     NaN     NaN     NaN     NaN     0.0     0.35     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+
+-1     -1     -1     -1     -1     -1     -1     
+0     1     -1     -1     -1     -1     -1     
+-1     0     2     -1     -1     -1     -1     
+-1     -1     0     3     -1     -1     -1     
+-1     -1     -1     0     4     -1     -1     
+-1     -1     -1     -1     0     5     -1     
+-1     -1     -1     -1     -1     0     6     
+-1     -1     -1     -1     -1     -1     -1     
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+0.0     0.05     NaN     NaN     NaN     NaN     NaN     
+NaN     0.0     0.15     NaN     NaN     NaN     NaN     
+NaN     NaN     0.0     0.05     NaN     NaN     NaN     
+NaN     NaN     NaN     0.0     0.35     NaN     NaN     
+NaN     NaN     NaN     NaN     0.0     0.05     NaN     
+NaN     NaN     NaN     NaN     NaN     0.0     0.35     
+NaN     NaN     NaN     NaN     NaN     NaN     0.0     
+
+-1     -1     -1     -1     -1     -1     -1     
+0     1     -1     -1     -1     -1     -1     
+-1     0     2     -1     -1     -1     -1     
+-1     -1     0     3     -1     -1     -1     
+-1     -1     -1     0     4     -1     -1     
+-1     -1     -1     -1     0     5     -1     
+-1     -1     -1     -1     -1     0     6     
+-1     -1     -1     -1     -1     -1     0     
+i,j,k    1    2    1<  <  <  <
+i,j,k    1    2    2<  <  <  <
+1     2===== sum over
+i,j,k    2    3    2<  <  <  <
+i,j,k    2    3    3>  >  >  >
+2     3===== sum over
+i,j,k    3    4    3<  <  <  <
+i,j,k    3    4    4<  <  <  <
+3     4===== sum over
+i,j,k    4    5    4<  <  <  <
+i,j,k    4    5    5>  >  >  >
+4     5===== sum over
+i,j,k    5    6    5<  <  <  <
+i,j,k    5    6    6<  <  <  <
+5     6===== sum over
+i,j,k    1    3    1<  <  <  <
+i,j,k    1    3    2<  <  <  <
+i,j,k    1    3    3>  >  >  >
+1     3===== sum over
+i,j,k    2    4    2<  <  <  <
+i,j,k    2    4    3>  >  >  >
+i,j,k    2    4    4<  <  <  <
+2     4===== sum over
+i,j,k    3    5    3<  <  <  <
+i,j,k    3    5    4<  <  <  <
+i,j,k    3    5    5>  >  >  >
+3     5===== sum over
+i,j,k    4    6    4<  <  <  <
+i,j,k    4    6    5>  >  >  >
+i,j,k    4    6    6>  >  >  >
+4     6===== sum over
+i,j,k    1    4    1<  <  <  <
+i,j,k    1    4    2<  <  <  <
+i,j,k    1    4    3>  >  >  >
+i,j,k    1    4    4<  <  <  <
+1     4===== sum over
+i,j,k    2    5    2<  <  <  <
+i,j,k    2    5    3>  >  >  >
+i,j,k    2    5    4<  <  <  <
+i,j,k    2    5    5>  >  >  >
+2     5===== sum over
+i,j,k    3    6    3<  <  <  <
+i,j,k    3    6    4<  <  <  <
+i,j,k    3    6    5>  >  >  >
+i,j,k    3    6    6>  >  >  >
+3     6===== sum over
+i,j,k    1    5    1<  <  <  <
+i,j,k    1    5    2<  <  <  <
+i,j,k    1    5    3>  >  >  >
+i,j,k    1    5    4<  <  <  <
+i,j,k    1    5    5>  >  >  >
+1     5===== sum over
+i,j,k    2    6    2<  <  <  <
+i,j,k    2    6    3>  >  >  >
+i,j,k    2    6    4<  <  <  <
+i,j,k    2    6    5>  >  >  >
+i,j,k    2    6    6>  >  >  >
+2     6===== sum over
+i,j,k    1    6    1<  <  <  <
+i,j,k    1    6    2<  <  <  <
+i,j,k    1    6    3>  >  >  >
+i,j,k    1    6    4<  <  <  <
+i,j,k    1    6    5>  >  >  >
+i,j,k    1    6    6>  >  >  >
+1     6===== sum over
+NaN     NaN     NaN     NaN     NaN     NaN     NaN     
+0.0     0.05     0.25     0.35     0.95     1.05     1.7999999999999998     
+NaN     0.0     0.15     0.25     0.8     0.9000000000000001     1.65     
+NaN     NaN     0.0     0.05     0.44999999999999996     0.5499999999999999     1.2999999999999998     
+NaN     NaN     NaN     0.0     0.35     0.44999999999999996     1.2     
+NaN     NaN     NaN     NaN     0.0     0.05     0.44999999999999996     
+NaN     NaN     NaN     NaN     NaN     0.0     0.35     
+NaN     NaN     NaN     NaN     NaN     NaN     0.0     
+
+-1     -1     -1     -1     -1     -1     -1     
+0     1     2     2     4     4     4     
+-1     0     2     2     4     4     4     
+-1     -1     0     3     4     4     4     
+-1     -1     -1     0     4     4     4     
+-1     -1     -1     -1     0     5     6     
+-1     -1     -1     -1     -1     0     6     
+-1     -1     -1     -1     -1     -1     0     
+1.7999999999999998
+4   IF
+
+2   ELSE
+
+1   CASE
+
+A Leaf has no further nodes!!!
+
+A Leaf has no further nodes!!!
+
+3   END
+
+A Leaf has no further nodes!!!
+
+A Leaf has no further nodes!!!
+
+6   THEN
+
+5   OF
+
+A Leaf has no further nodes!!!
+
+A Leaf has no further nodes!!!
+
+A Leaf has no further nodes!!!
+
+The end.
