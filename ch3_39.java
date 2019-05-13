@@ -32,16 +32,14 @@ public class LongestCommonSubstring {
         if (i < S1.length && j < S2.length){
             if (S1[i] == S2[j]) { // match at the corner, go next
                 A[i][j] = 1;
-                i++;
-                j++;
-                func(i,j,A,S1,S2);
+                func(i + 1, j + 1, A, S1, S2);
             }
             else{
 
                 // Search downward.
                 int iGoDown = i+1; // one box downward
                 boolean foundInColumn = false;
-                while (!foundInColumn && iGoDown < S1.length){
+                while (!foundInColumn && iGoDown < S1.length) {
                     if (S1[iGoDown] == S2[j]){
                         foundInColumn = true;
                         // save this to the left child
@@ -49,12 +47,14 @@ public class LongestCommonSubstring {
                     }
                     iGoDown++;
                 }
-                func(iGoDown-1,j,A,S1,S2);
-                
+                if (foundInColumn) {
+                    func(iGoDown - 1,j,A,S1,S2);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                }
+            
                 // Search rightward.
                 int jGoRight = j + 1; // one box rightward
                 boolean foundInRow = false;
-                while (!foundInRow && jGoRight < S2.length){
+                while (!foundInRow && jGoRight < S2.length) {
                     if (S1[i] == S2[jGoRight]){
                         foundInRow = true;
                         // save the matching one in the row to the right child
@@ -62,8 +62,13 @@ public class LongestCommonSubstring {
                     }
                     jGoRight++;
                 }
-                func(i,jGoRight-1,A,S1,S2);
-                    
+                if (foundInRow) {
+                    func(i, jGoRight - 1, A, S1, S2); //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                }
+                if (!foundInRow && !foundInRow) {
+                    func(i + 1, j + 1, A, S1, S2);
+                }
+                
             }
         }
         else{
