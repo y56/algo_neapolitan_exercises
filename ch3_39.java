@@ -65,6 +65,7 @@ public class LongestCommonSubstring {
                 if (foundInRow) {
                     func(i, jGoRight - 1, A, S1, S2); //  we have to use `iGoDown - 1` because we did `iGoDown++`
                 }
+                // No hits in the column and the row, go to the next corner
                 if (!foundInRow && !foundInRow) {
                     func(i + 1, j + 1, A, S1, S2);
                 }
@@ -73,7 +74,7 @@ public class LongestCommonSubstring {
         }
         else{
             // do nothing
-            System.out.println("i of j is out of index");
+            System.out.println("i or j is out of index");
         }
     }
     
