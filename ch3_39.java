@@ -2,17 +2,28 @@ public class LongestCommonSubstring {
     
     public static void printChart(int[][] A, char[] S1, char[] S2) {
         
-        System.out.print("   ");
+        System.out.print("     ");
         for (int j = 0; j < S2.length; j++){
-            System.out.print(S2[j]+"  ");
-        }System.out.println();
+            System.out.print(j + "    ");
+        }
+        System.out.println();
+            
+        System.out.print("    ");
+        for (int j = 0; j < S2.length; j++){
+            System.out.print("\'"+S2[j]+"\'"+"  ");
+        }
+        System.out.println();
     
-        for (int i = 0; i < S1.length; i++){
-            System.out.print(S1[i]+"  ");
+        for (int i = 0; i < S1.length; i++) {
+            System.out.printf("%d ", i);
+            System.out.print(S1[i]);
                 for (int j = 0; j < S2.length; j++){
-                    System.out.print(A[i][j]+"  ");}
-            System.out.println();}
-        System.out.println();}
+                    System.out.printf("%3d  ", A[i][j]);
+                }
+            System.out.println();
+        }
+        System.out.println();
+    }
         
     public static void printArray(int[] array) {
         
@@ -31,24 +42,38 @@ public class LongestCommonSubstring {
     public static void func(int i, int j, int[][] A, char[] S1, char[] S2){
         if (i < S1.length && j < S2.length){
             if (S1[i] == S2[j]) { // match at the corner, go next
-                A[i][j] = 1;
+                System.out.printf("(%d , %d )  ", i, j);
+                System.out.println("A hit at the corner, go to next corner");
+                A[i][j] += 1;
                 func(i + 1, j + 1, A, S1, S2);
             }
             else{
+                System.out.printf("(%d , %d )  ", i, j);
+                System.out.println("No hits at the corner. ");
+                A[i][j] += -7;
 
                 // Search downward.
                 int iGoDown = i+1; // one box downward
                 boolean foundInColumn = false;
                 while (!foundInColumn && iGoDown < S1.length) {
                     if (S1[iGoDown] == S2[j]){
+                        System.out.printf("(%d , %d )  ", iGoDown, j);
+                        System.out.println("A hit in the column.");
                         foundInColumn = true;
                         // save this to the left child
-                        A[iGoDown][j] = 1;
+                        A[iGoDown][j] += 44;
+                    }
+                    else{
+                        A[iGoDown][j] += -1;
                     }
                     iGoDown++;
                 }
                 if (foundInColumn) {
-                    func(iGoDown - 1,j,A,S1,S2);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    func(iGoDown, j + 1,A,S1,S2);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                }
+                else{
+                    System.out.printf("(%d , %d~)  ", iGoDown - 1, j);
+                    System.out.println("No hit in column");
                 }
             
                 // Search rightward.
@@ -56,17 +81,28 @@ public class LongestCommonSubstring {
                 boolean foundInRow = false;
                 while (!foundInRow && jGoRight < S2.length) {
                     if (S1[i] == S2[jGoRight]){
+                        System.out.printf("(%d , %d )  ", i, jGoRight);
+                        System.out.println("A hit in the row.");
                         foundInRow = true;
                         // save the matching one in the row to the right child
-                        A[i][jGoRight] = 1;
+                        A[i][jGoRight] += 44;
+                    }
+                    else{
+                         A[i][jGoRight] -= 1;
                     }
                     jGoRight++;
                 }
                 if (foundInRow) {
-                    func(i, jGoRight - 1, A, S1, S2); //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    func(i + 1, jGoRight, A, S1, S2); 
+                }
+                else{
+                    System.out.printf("(%d , %d~)  ", i, jGoRight - 1); //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    System.out.println("No hit in row");
                 }
                 // No hits in the column and the row, go to the next corner
                 if (!foundInRow && !foundInRow) {
+                    System.out.printf("(%d~, %d~)  ", i, j);
+                    System.out.println("No hits in column or row, go to next corner.");
                     func(i + 1, j + 1, A, S1, S2);
                 }
                 
