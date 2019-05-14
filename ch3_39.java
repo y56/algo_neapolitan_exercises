@@ -87,51 +87,41 @@ public class LongestCommonSubstring {
                         System.out.printf("(%d , %d )  ", iGoDown, j);
                         System.out.println("A hit in the column.");
                         foundInColumn = true;
-                        // save this to the left child
                         A[iGoDown][j] += 44;
+                        // save this as left child
+                        Node newNode = new Node(S1[iGoDown]);
+                        node.append(newNode);
+                        fillChartPlantTree(iGoDown + 1, j + 1,A,S1,S2,newNode);
                     }
                     else{
                         A[iGoDown][j] += -1;
+                        System.out.printf("(%d , %d~)  ", iGoDown - 1, j);
+                        System.out.println("No hit in column");
                     }
                     iGoDown++;
                 }
-                if (foundInColumn) {
-                    Node newNode = new Node(S1[iGoDown-1]);
-                    node.append(newNode);
-                    fillChartPlantTree(iGoDown, j + 1,A,S1,S2,newNode);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
-                }
-                else{
-                    System.out.printf("(%d , %d~)  ", iGoDown - 1, j);
-                    System.out.println("No hit in column");
-                }
-            
                 // Search rightward.
                 int jGoRight = j + 1; // one box rightward
                 boolean foundInRow = false;
                 while (!foundInRow && jGoRight < S2.length) {
-                    if (S1[i] == S2[jGoRight]){
+                    if (S1[i] == S2[jGoRight]) {
                         System.out.printf("(%d , %d )  ", i, jGoRight);
                         System.out.println("A hit in the row.");
                         foundInRow = true;
-                        // save the matching one in the row to the right child
-                        A[i][jGoRight] += 44;
+                        A[i][jGoRight] += 44;  // mark in the chart
+                        Node newNode = new Node(S1[i]); // save the matching one in the row as the right child 
+                        node.append(newNode);
+                        fillChartPlantTree(i + 1, jGoRight + 1, A, S1, S2, newNode);
                     }
                     else{
-                         A[i][jGoRight] -= 1;
+                        A[i][jGoRight] -= 1;
+                        System.out.printf("(%d , %d~)  ", i, jGoRight); 
+                        System.out.println("No hit in row");
                     }
                     jGoRight++;
                 }
-                if (foundInRow) {
-                    Node newNode = new Node(S1[i]); //  we have to use `iGoDown - 1` because we did `iGoDown++`
-                    node.append(newNode);
-                    fillChartPlantTree(i + 1, jGoRight, A, S1, S2, newNode); 
-                }
-                else{
-                    System.out.printf("(%d , %d~)  ", i, jGoRight - 1); 
-                    System.out.println("No hit in row");
-                }
-                // No hits in the column and the row, go to the next corner
-                if (!foundInRow && !foundInRow) {
+                // No hits in the column or row, go to the next corner
+                if (!foundInRow && !foundInColumn) {
                     System.out.printf("(%d~, %d~)  ", i, j);
                     System.out.println("No hits in column or row, go to next corner.");
                     fillChartPlantTree(i + 1, j + 1, A, S1, S2, node);
@@ -153,18 +143,18 @@ public class LongestCommonSubstring {
                 printAlongNodes(node.rightChild);
             }
             else{
-                System.out.println("null char, should be head");
+                System.out.println("null_char_as_head");
                 printAlongNodes(node.leftChild);
                 printAlongNodes(node.rightChild);
             }
         }
     }
     public static void LCS(char[] S1, char[] S2){
-        char[] LCM;
-        int[][] A = new int[S1.length][S2.length];
-        int[] tree = new int[S2.length]; // choose the shorter as S2
-        //   i,j
-        Node head = new Node();
+        
+        int[][] A = new int[S1.length][S2.length];  // initialize a chart
+
+        Node head = new Node(); // create the head of a tree
+        
         fillChartPlantTree(0,0,A,S1,S2,head);
         
         System.out.println();
@@ -172,13 +162,15 @@ public class LongestCommonSubstring {
         
         System.out.println();
         printChart(A, S1, S2);
-        // return something, maybe a tree
     }
         
     public static void main(String[] args) {
-        char[] S1 = {'A','$','C','M','A','*','M','N'}; 
+        //char[] S1 = {'A','$','C','M','A','*','M','N'}; 
+        char[] S1 = {'A', 'X', 'M', 'G', 'J', 'K', 'C', '4', 'A', 'N', 'B'};
+        char[] S2 = {'A', '$', 'C', '4', 'I', 'Q', 'M', 'A', '*', 'M', 'N'};
+        
         //char[] S1 = {'A','B'}; 
-        char[] S2 = {'A','X','M','C','4','A','N','B'};
+        //char[] S2 = {'A','X','M','C','4','A','N','B'};
         //char[] S2 = {'1','2','3','4','5'}; 
         LCS(S1, S2); // choose the longer as S1
         
