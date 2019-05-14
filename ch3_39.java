@@ -38,14 +38,41 @@ public class LongestCommonSubstring {
             for (int jj=j;jj<S2_length;jj++ ){
                 A[ii][jj] = A[ii][jj] + 1;
             }}};
+    
+    public static class Node {
+        
+        public char myChar;
+        public Node leftChild;
+        public Node rightChild;
+        
+        public void append(Node childNode) {
+            if  (null == leftChild) {
+                this.leftChild = childNode;
+            }
+            else if (null == rightChild) {
+                this.rightChild = childNode;
+            }
+            else { // left and right both already have child  
+                System.out.println("Can't have more children");
+            }
+        }
+        public Node() {
+            this.myChar = '\u0000';
+        }
+        public Node(char newChar) {
+            this.myChar = newChar;
+        }
+    }
             
-    public static void func(int i, int j, int[][] A, char[] S1, char[] S2){
+    public static void fillChartPlantTree(int i, int j, int[][] A, char[] S1, char[] S2, Node node){
         if (i < S1.length && j < S2.length){
             if (S1[i] == S2[j]) { // match at the corner, go next
                 System.out.printf("(%d , %d )  ", i, j);
                 System.out.println("A hit at the corner, go to next corner");
                 A[i][j] += 1;
-                func(i + 1, j + 1, A, S1, S2);
+                Node newNode = new Node(S1[i]);
+                node.append(newNode);
+                fillChartPlantTree(i + 1, j + 1, A, S1, S2, newNode);
             }
             else{
                 System.out.printf("(%d , %d )  ", i, j);
@@ -69,7 +96,9 @@ public class LongestCommonSubstring {
                     iGoDown++;
                 }
                 if (foundInColumn) {
-                    func(iGoDown, j + 1,A,S1,S2);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    Node newNode = new Node(S1[iGoDown-1]);
+                    node.append(newNode);
+                    fillChartPlantTree(iGoDown, j + 1,A,S1,S2,newNode);  //  we have to use `iGoDown - 1` because we did `iGoDown++`
                 }
                 else{
                     System.out.printf("(%d , %d~)  ", iGoDown - 1, j);
@@ -93,39 +122,56 @@ public class LongestCommonSubstring {
                     jGoRight++;
                 }
                 if (foundInRow) {
-                    func(i + 1, jGoRight, A, S1, S2); 
+                    Node newNode = new Node(S1[i]); //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    node.append(newNode);
+                    fillChartPlantTree(i + 1, jGoRight, A, S1, S2, newNode); 
                 }
                 else{
-                    System.out.printf("(%d , %d~)  ", i, jGoRight - 1); //  we have to use `iGoDown - 1` because we did `iGoDown++`
+                    System.out.printf("(%d , %d~)  ", i, jGoRight - 1); 
                     System.out.println("No hit in row");
                 }
                 // No hits in the column and the row, go to the next corner
                 if (!foundInRow && !foundInRow) {
                     System.out.printf("(%d~, %d~)  ", i, j);
                     System.out.println("No hits in column or row, go to next corner.");
-                    func(i + 1, j + 1, A, S1, S2);
+                    fillChartPlantTree(i + 1, j + 1, A, S1, S2, node);
                 }
-                
             }
         }
         else{
             // do nothing
+            System.out.printf("(%d , %d )  ", i, j);
             System.out.println("i or j is out of index");
         }
     }
     
-    
-            
-    public static void LCM(char[] S1, char[] S2){
+    public static void printAlongNodes(Node node) {
+        if (null != node) {
+            if ('\u0000' != node.myChar) {
+                System.out.println(node.myChar);
+                printAlongNodes(node.leftChild);
+                printAlongNodes(node.rightChild);
+            }
+            else{
+                System.out.println("null char, should be head");
+                printAlongNodes(node.leftChild);
+                printAlongNodes(node.rightChild);
+            }
+        }
+    }
+    public static void LCS(char[] S1, char[] S2){
         char[] LCM;
         int[][] A = new int[S1.length][S2.length];
         int[] tree = new int[S2.length]; // choose the shorter as S2
-        //   i,j        
-        func(0,0,A,S1,S2);
-       
-
+        //   i,j
+        Node head = new Node();
+        fillChartPlantTree(0,0,A,S1,S2,head);
+        
+        System.out.println();
+        printAlongNodes(head);
+        
+        System.out.println();
         printChart(A, S1, S2);
-        printArray(tree);
         // return something, maybe a tree
     }
         
@@ -134,7 +180,7 @@ public class LongestCommonSubstring {
         //char[] S1 = {'A','B'}; 
         char[] S2 = {'A','X','M','C','4','A','N','B'};
         //char[] S2 = {'1','2','3','4','5'}; 
-        LCM(S1, S2); // choose the longer as S1
+        LCS(S1, S2); // choose the longer as S1
         
         System.out.println("The end.");
     }
