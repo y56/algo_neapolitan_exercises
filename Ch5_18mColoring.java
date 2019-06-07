@@ -52,7 +52,6 @@ public class Ch5_18mColoring {
     };
     int[] vColor = new int[adjacencyMatrix.length]; // the coloring result of each vertex
     int m = 3; // number of colors we can use
-    System.out.println("i,totalOfTaken,totalOfUntaken,1(take)/2(not take)");
     mColoring(-1, m, vColor, adjacencyMatrix);
   }
 }
