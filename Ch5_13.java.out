@@ -1,0 +1,60 @@
+i,totalOfTaken,totalOfUntaken,1(take)/2(not take)
+-1       0       106       000000     still promising
+0       2       104       100000     still promising
+1       12       94       110000     still promising
+2       25       81       111000     still promising
+3       42       64       111100      Not promising  Not meet, also, adding w[4]=22 will exceed
+3       25       64       111200     still promising
+4       47       42       111210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       25       42       111220      Not promising  Not meet, also, adding w[5]=42 will exceed
+2       12       81       112000     still promising
+3       29       64       112100     still promising
+4       51       42       112110      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       29       42       112120      Not promising  Not meet, also, adding w[5]=42 will exceed
+3       12       64       112200     still promising
+4       34       42       112210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       12       42       112220      Not promising  Not meet, also, adding w[5]=42 will exceed
+1       2       94       120000     still promising
+2       15       81       121000     still promising
+3       32       64       121100      Not promising  Not meet, also, adding w[4]=22 will exceed
+3       15       64       121200     still promising
+4       37       42       121210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       15       42       121220      Not promising  Not meet, also, adding w[5]=42 will exceed
+2       2       81       122000     still promising
+3       19       64       122100     still promising
+4       41       42       122110      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       19       42       122120      Not promising  Not meet, also, adding w[5]=42 will exceed
+3       2       64       122200     still promising
+4       24       42       122210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       2       42       122220      Not promising (totalOfTaken+totalOfUntaken<target)
+0       0       104       200000     still promising
+1       10       94       210000     still promising
+2       23       81       211000     still promising
+3       40       64       211100      Not promising  Not meet, also, adding w[4]=22 will exceed
+3       23       64       211200     still promising
+4       45       42       211210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       23       42       211220      Not promising  Not meet, also, adding w[5]=42 will exceed
+2       10       81       212000     still promising
+3       27       64       212100     still promising
+4       49       42       212110      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       27       42       212120      Not promising  Not meet, also, adding w[5]=42 will exceed
+3       10       64       212200     still promising
+4       32       42       212210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       10       42       212220     still promising
+5       52       0       212221     !!!~~~ MEET ~~~!!!     212221
+5       10       0       212222      Not promising (totalOfTaken+totalOfUntaken<target)We have come to the end. Usage of all items are decided
+1       0       94       220000     still promising
+2       13       81       221000     still promising
+3       30       64       221100     still promising
+4       52       42       221110     !!!~~~ MEET ~~~!!!     22111
+4       30       42       221120      Not promising  Not meet, also, adding w[5]=42 will exceed
+3       13       64       221200     still promising
+4       35       42       221210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       13       42       221220      Not promising  Not meet, also, adding w[5]=42 will exceed
+2       0       81       222000     still promising
+3       17       64       222100     still promising
+4       39       42       222110      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       17       42       222120      Not promising  Not meet, also, adding w[5]=42 will exceed
+3       0       64       222200     still promising
+4       22       42       222210      Not promising  Not meet, also, adding w[5]=42 will exceed
+4       0       42       222220      Not promising (totalOfTaken+totalOfUntaken<target)
