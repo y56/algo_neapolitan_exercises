@@ -64,5 +64,5 @@ for skip in range(0,len(W)):      # n loops
     print("\nNow, D is")
     for _ in range(len(W)): print(W[_])
     print("\nThe P matrix is")
-    for _ in range(len(P)): print(str(P[_]) + ",")
+    for _ in range(len(P)): print(str(P[_]))
     print()
