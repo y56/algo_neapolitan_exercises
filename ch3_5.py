@@ -45,14 +45,14 @@ for skip in range(0,len(W)):      # n loops
             
             if W[skip][j] != -1 and W[i][skip] != -1:  # they are normal numbers
                 if W[i][j] == -1: # originally an Inf
-                    W[i][j] = W[skip][j] + W[skip][j]
+                    W[i][j] = W[skip][j] + W[i][skip]
                     print("choose W[ %d ][ %d ] =  %2d + %2d" %(i, j, W[skip][j], W[i][skip]))
                     if (skip > P[i][j]):
                         P[i][j] = skip
                         print("P[ %d ][ %d ] =          %d" %(i, j,skip))
                 else:  # they all are normal numbers, we have to compare  
                     if W[skip][j] + W[i][skip] < W[i][j]:    
-                        W[i][j] = W[skip][j] + W[skip][j]
+                        W[i][j] = W[skip][j] + W[i][skip]
                         print("choose W[ %d ][ %d ] =  %2d + %2d" %(i, j, W[skip][j], W[i][skip]))
                         if (skip > P[i][j]):
                             P[i][j] = skip
@@ -64,6 +64,5 @@ for skip in range(0,len(W)):      # n loops
     print("\nNow, D is")
     for _ in range(len(W)): print(W[_])
     print("\nThe P matrix is")
-    for _ in range(len(P)): print(P[_])
+    for _ in range(len(P)): print(str(P[_]) + ",")
     print()
-    
